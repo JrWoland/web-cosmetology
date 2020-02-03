@@ -3,18 +3,23 @@
 $main-color: #e1cc6c;
 $main-second-color: #bdae6a;
 $font-color: #888888;
-$attention-color: #b55ce9;
+$attention-color: #a200ff;
 $main-background-color: white;
 $border-color: #dadada;
 
-// fonts size
+// fonts size base 1em = 16px;
 
-$hero-size: 120px;
+$hero-font: 128px;
+$big-font: 64px;
+$large-font: 48px;
+$medium-font: 32px;
+$small-font: 16px;
 
-//layout sizes
+//font-weigth
 
-$app-container-width: 90%;
+$bold: 700;
+$light: 300;
 
-$main-margin: 150px;
-
-$header-height: 100px;
+//layout
+$main-gap: 5em;
+$header-height: 70px;

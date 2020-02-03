@@ -1,8 +1,9 @@
 <template>
   <header class="main-header">
-    <div class="main-header__logo">
-      <nuxt-link to="/"> LOGO </nuxt-link>
-    </div>
+    <nuxt-link class="main-header__logo" to="/">
+      <img class="main-header__logo-img" src="~/assets/svg/Logo.svg" alt="" />
+      <p class="main-header__logo-text">cosmetology</p>
+    </nuxt-link>
 
     <nav class="main-header__nav">
       <ul class="main-header__list">
@@ -37,15 +38,41 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   height: $header-height;
-  padding: 1em 0;
+  padding: 0 $main-gap 0;
+  box-shadow: 0px 1px 6px 0px #e6e6e6;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    color: $main-second-color;
+    width: 400px;
+    height: 80%;
+  }
+  &__logo-img {
+    height: 70%;
+  }
+  &__logo-text {
+    font-size: 2.5em;
+    padding: 0 15px 0;
+  }
 
   &__list {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: $small-font;
+    color: $font-color;
     display: flex;
   }
 
   &__list-item {
-    padding: 0 2em;
+    min-width: fit-content;
+    margin: 0 0 0 5em;
+    transition: color 0.3s;
+    &:hover {
+      color: $attention-color;
+    }
   }
 }
 </style>

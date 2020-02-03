@@ -16,9 +16,9 @@ export default {
 
 <style lang="scss" scoped>
 .app-container {
-  margin: auto;
   display: flex;
   flex-direction: column;
-  width: $app-container-width;
+  justify-content: center;
+  align-items: center;
 }
 </style>
