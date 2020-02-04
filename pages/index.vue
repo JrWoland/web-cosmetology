@@ -1,11 +1,16 @@
 <template>
   <main class="container">
-    <h1>Main page</h1>
+    <HeroSection />
   </main>
 </template>
 
 <script>
-export default {}
+import HeroSection from '~/components/HeroSection'
+export default {
+  components: {
+    HeroSection
+  }
+}
 </script>
 
-<style></style>
+<style lang="scss"></style>
