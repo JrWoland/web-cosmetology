@@ -35,6 +35,8 @@ export default {
 
 <style lang="scss">
 .main-header {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,6 +44,8 @@ export default {
   height: $header-height;
   padding: 0 $main-gap 0;
   box-shadow: 0px 1px 6px 0px #e6e6e6;
+  background: white;
+  z-index: 1;
 
   &__logo {
     display: flex;
@@ -54,12 +58,14 @@ export default {
     height: 70%;
   }
   &__logo-text {
+    font-family: $main-font, serif;
     font-size: 2.5em;
+    letter-spacing: 2px;
     padding: 0 15px 0;
   }
 
   &__list {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $second-font, sans-serif;
     font-weight: 700;
     font-size: $small-font;
     color: $font-color;
