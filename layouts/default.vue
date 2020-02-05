@@ -16,9 +16,9 @@ export default {
 
 <style lang="scss" scoped>
 .app-container {
+  padding-top: $header-height;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 </style>
