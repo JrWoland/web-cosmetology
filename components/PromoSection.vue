@@ -1,0 +1,62 @@
+<template>
+  <section class="promo-section">
+    <div class="promo-section__titles promo-section__item-gap">
+      <h2 class="promo-section__head promo-section__item-gap">ABOUT</h2>
+      <h1 class="promo-section__title promo-section__item-gap">
+        Come and you will be Inspired!
+      </h1>
+      <p class="promo-section__subtitle promo-section__item-gap">
+        It’s the end of summer the sweltering heat makes human sweat in the
+        night and makes the plants and trees wilt even in the moonlit nights.
+        The eastern wind breeze brings an eerie feeling, that the monsoon clouds
+        are soon coming,
+      </p>
+      <div class="promo-section__button promo-section__item-gap">
+        <MainButton button-content="read more" />
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+import MainButton from './MainButton'
+export default {
+  name: 'PromoSection',
+  components: {
+    MainButton
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.promo-section {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $font-color;
+  height: 100vh;
+  padding: 0 $main-gap 0;
+  &__item-gap {
+    margin-top: 25px;
+  }
+  &__head {
+    font-family: $second-font;
+    font-size: $medium-font;
+    line-height: $medium-font;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  &__title {
+    font-family: $main-font;
+    font-size: $big-font;
+    line-height: $big-font;
+    font-weight: 400;
+  }
+  &__subtitle {
+    font-family: $second-font;
+    font-size: $small-font;
+    line-height: 2em;
+  }
+}
+</style>

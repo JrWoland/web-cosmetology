@@ -1,11 +1,19 @@
 <template>
-  <div class="container">
-    <h1>Main page</h1>
-  </div>
+  <main class="container">
+    <HeroSection />
+    <PromoSection />
+  </main>
 </template>
 
 <script>
-export default {}
+import HeroSection from '~/components/HeroSection'
+import PromoSection from '~/components/PromoSection'
+export default {
+  components: {
+    HeroSection,
+    PromoSection
+  }
+}
 </script>
 
-<style></style>
+<style lang="scss" scoped></style>
