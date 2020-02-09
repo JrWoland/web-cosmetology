@@ -1,17 +1,17 @@
 <template>
   <main class="container">
-    <HeroSection />
-    <PromoSection />
+    <!-- <HeroSection />
+    <PromoSection /> -->
   </main>
 </template>
 
 <script>
-import HeroSection from '~/components/HeroSection'
-import PromoSection from '~/components/PromoSection'
+// import HeroSection from '~/components/HeroSection'
+// import PromoSection from '~/components/PromoSection'
 export default {
   components: {
-    HeroSection,
-    PromoSection
+    // HeroSection,
+    // PromoSection
   }
 }
 </script>

@@ -21,7 +21,7 @@ export default {
   font-family: $second-font, sans-serif;
   font-size: $medium-font;
   font-weight: 300;
-  padding: 0.3em 2.5em;
+  padding: 0.2em 1.3em;
   border-radius: 10em;
   border: none;
   outline: none;

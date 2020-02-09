@@ -1,12 +1,15 @@
 <template>
   <header class="main-header">
-    <nuxt-link class="main-header__logo" to="/">
-      <img class="main-header__logo-img" src="~/assets/svg/Logo.svg" alt="" />
-      <p class="main-header__logo-text">cosmetology</p>
-    </nuxt-link>
+    <div class="main-header__logo-container">
+      <nuxt-link class="main-header__logo" to="/">
+        <img class="main-header__logo-img" src="~/assets/svg/Logo.svg" alt="" />
+        <p class="main-header__logo-text">cosmetology</p>
+      </nuxt-link>
+      <div @click="handleVisible" class="main-header__hamburger"><i>X</i></div>
+    </div>
 
-    <nav class="main-header__nav">
-      <ul class="main-header__list">
+    <nav :class="{ active: isActive }" class="main-header__nav">
+      <ul @click="handleVisible" class="main-header__list">
         <li class="main-header__list-item">
           <nuxt-link to="/services"> Services </nuxt-link>
         </li>
@@ -29,55 +32,102 @@
 
 <script>
 export default {
-  name: 'Navigation'
+  name: 'Navigation',
+  data() {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    handleVisible() {
+      this.isActive = !this.isActive
+    }
+  }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .main-header {
   position: fixed;
   top: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  flex-direction: column;
+  width: 100vw;
+  padding: 0 $mobile-gap 0;
   height: $header-height;
-  padding: 0 $main-gap 0;
   box-shadow: 0px 1px 6px 0px #e6e6e6;
   background: white;
   z-index: 1;
-
+  @include for-tablet-landscape-up {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $main-gap 0;
+  }
+  &__logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $header-height;
+  }
   &__logo {
     display: flex;
     align-items: center;
     color: $main-second-color;
-    width: 400px;
-    height: 80%;
+    height: $header-height;
+  }
+  &__hamburger {
+    width: 20px;
+    height: 20px;
+    @include for-tablet-landscape-up {
+      display: none;
+    }
   }
   &__logo-img {
     height: 70%;
   }
   &__logo-text {
     font-family: $main-font, serif;
-    font-size: 2.5em;
+    font-size: 2em;
     letter-spacing: 2px;
     padding: 0 15px 0;
   }
 
-  &__list {
+  &__nav {
+    display: none;
     font-family: $second-font, sans-serif;
     font-weight: 700;
     font-size: $small-font;
     color: $font-color;
-    display: flex;
+    &.active {
+      display: block;
+    }
+    @include for-tablet-landscape-up {
+      display: block;
+    }
   }
-
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - #{$header-height});
+    padding: 5em 0;
+    @include for-tablet-landscape-up {
+      flex-direction: row;
+      justify-content: space-between;
+      height: $header-height;
+    }
+  }
   &__list-item {
-    min-width: fit-content;
-    margin: 0 0 0 5em;
     transition: color 0.3s;
     &:hover {
       color: $attention-color;
+    }
+    @include for-tablet-landscape-up {
+      margin: 0 0 0 5vw;
+      min-width: fit-content;
+      font-size: 0.8em;
     }
   }
 }
