@@ -53,10 +53,9 @@ export default {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  padding: 0 $mobile-gap 0;
   height: $header-height;
   box-shadow: 0px 1px 6px 0px #e6e6e6;
-  background: white;
+  background-color: white;
   z-index: 1;
   @include for-tablet-landscape-up {
     flex-direction: row;
@@ -69,6 +68,10 @@ export default {
     justify-content: space-between;
     align-items: center;
     height: $header-height;
+    padding: 0 $mobile-gap 0;
+    @include for-tablet-landscape-up {
+      padding: 0;
+    }
   }
   &__logo {
     display: flex;
@@ -95,6 +98,7 @@ export default {
 
   &__nav {
     display: none;
+    width: 100vw;
     font-family: $second-font, sans-serif;
     font-weight: 700;
     font-size: $small-font;
@@ -104,6 +108,7 @@ export default {
     }
     @include for-tablet-landscape-up {
       display: block;
+      width: auto;
     }
   }
   &__list {
@@ -117,6 +122,7 @@ export default {
       flex-direction: row;
       justify-content: space-between;
       height: $header-height;
+      padding: 0;
     }
   }
   &__list-item {
