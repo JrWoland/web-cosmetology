@@ -3,8 +3,7 @@
     <div class="hero-section__titles">
       <h1 class="hero-section__title">Essence of natural <br />Beauty</h1>
       <p class="hero-section__subtitle">
-        Together creeping <br />
-        heaven upon third dominion be upon.
+        Together creeping heaven upon <br />third dominion be upon.
       </p>
       <div class="hero-section__button">
         <MainButton button-content="services" />
@@ -27,49 +26,69 @@ export default {
 <style lang="scss" scoped>
 .hero-section {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: $font-color;
   padding: 0 $mobile-gap 0;
-  min-height: 100vh;
+  height: calc(100vh - #{$header-height});
   width: 100%;
   overflow: hidden;
   text-align: center;
+  @include for-tablet-landscape {
+    height: calc(100vh - #{$header-height});
+    padding: 0 $desktop-gap 0;
+  }
   &__titles *:nth-child(n) {
     margin-top: 4vh;
+  }
+  &__titles {
+    @include for-tablet-landscape {
+      text-align: left;
+      align-self: flex-start;
+      top: 60px;
+    }
   }
   &__title {
     font-family: $main-font;
     font-size: $medium-font;
     line-height: 40px;
     font-weight: 400;
+    @include for-tablet-landscape {
+      font-size: $big-font;
+      line-height: $big-font;
+    }
+    @include for-desktop-up {
+      font-size: $hero-font;
+      line-height: $hero-font;
+    }
   }
   &__subtitle {
     margin-top: 40px;
     font-family: $second-font;
     font-size: $small-font;
     line-height: 20px;
+    @include for-tablet-landscape {
+      font-family: $second-font;
+      font-size: $medium-font;
+      line-height: 50px;
+    }
   }
   &__button {
     margin-top: 20px;
   }
   &__img {
-    position: absolute;
-    bottom: 0;
-    right: -40%;
-    width: 280%;
-    @include for-phone-portrait-up {
-      bottom: -20px;
-      right: -30%;
-      width: 250%;
+    transform: translate(-192px, -180px) scale(0.5);
+    z-index: -1;
+    @include for-tablet-landscape {
+      position: absolute;
+      bottom: 20px;
+      width: 100vw;
+      transform: translate(0, 0) scale(1.2);
     }
   }
 }
 // .hero-section {
-//   position: relative;
-//   background-size: contain;
-//   background-position-x: right;
-//   background-position-y: bottom;
-//   background-repeat: no-repeat;
-//   color: $font-color;
 //   padding: 0 $desktop-gap 0;
 //   &__titles {
 //     position: absolute;
