@@ -88,27 +88,4 @@ export default {
     }
   }
 }
-// .hero-section {
-//   padding: 0 $desktop-gap 0;
-//   &__titles {
-//     position: absolute;
-//     top: 60px;
-//     left: $desktop-gap;
-//   }
-//   &__title {
-//     font-family: $main-font;
-//     font-size: $hero-font;
-//     line-height: $hero-font;
-//     font-weight: 400;
-//   }
-//   &__subtitle {
-//     margin-top: 40px;
-//     font-family: $second-font;
-//     font-size: $medium-font;
-//     line-height: 50px;
-//   }
-//   &__button {
-//     margin-top: 50px;
-//   }
-// }
 </style>
