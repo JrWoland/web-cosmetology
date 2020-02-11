@@ -1,25 +1,30 @@
 @mixin for-phone-portrait-up {
-  @media (min-width: 399px) {
+  @media only screen and (min-width: 399px) {
+    @content;
+  }
+}
+@mixin for-phone-landscape {
+  @media only screen and (min-width: 399px) and (max-width: 644px) and (orientation: landscape) {
     @content;
   }
 }
 @mixin for-tablet-landscape {
-  @media (min-width: 645px) {
+  @media only screen and (min-width: 645px) {
     @content;
   }
 }
 @mixin for-tablet-landscape-up {
-  @media (min-width: 900px) {
+  @media only screen and (min-width: 900px) {
     @content;
   }
 }
 @mixin for-desktop-up {
-  @media (min-width: 1200px) {
+  @media only screen and (min-width: 1200px) {
     @content;
   }
 }
 @mixin for-big-desktop-up {
-  @media (min-width: 1800px) {
+  @media only screen and (min-width: 1800px) {
     @content;
   }
 }
