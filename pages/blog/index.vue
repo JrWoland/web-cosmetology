@@ -1,7 +1,9 @@
 <template>
-  <h1>
-    blog
-  </h1>
+  <main>
+    <h1>
+      blog
+    </h1>
+  </main>
 </template>
 
 <script>

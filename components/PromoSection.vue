@@ -36,7 +36,7 @@ export default {
   align-items: center;
   color: $font-color;
   height: 100vh;
-  padding: 0 $main-gap 0;
+  padding: 0 $desktop-gap 0;
   &__item-gap {
     margin-top: 25px;
   }
