@@ -64,7 +64,7 @@ export default {
   box-shadow: 0px 1px 6px 0px #e6e6e6;
   background-color: white;
   z-index: 1;
-  @include for-tablet-landscape-up {
+  @include for-tablet-landscape {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -76,7 +76,7 @@ export default {
     align-items: center;
     height: $header-height;
     padding: 0 $mobile-gap 0;
-    @include for-tablet-landscape-up {
+    @include for-tablet-landscape {
       padding: 0;
     }
   }
@@ -89,18 +89,25 @@ export default {
   &__hamburger {
     width: 20px;
     height: 20px;
-    @include for-tablet-landscape-up {
+    @include for-tablet-landscape {
       display: none;
     }
   }
   &__logo-img {
-    height: 70%;
+    height: 40%;
+    @include for-desktop-up {
+      height: 70%;
+    }
   }
   &__logo-text {
     font-family: $main-font, serif;
-    font-size: 2em;
+    font-size: 1em;
     letter-spacing: 2px;
     padding: 0 15px 0;
+    @include for-desktop-up {
+      height: 70%;
+      font-size: 2em;
+    }
   }
 
   &__nav {
@@ -114,7 +121,7 @@ export default {
     &.active {
       display: block;
     }
-    @include for-tablet-landscape-up {
+    @include for-tablet-landscape {
       display: block;
       width: auto;
     }
@@ -126,7 +133,7 @@ export default {
     align-items: center;
     height: calc(100vh - #{$header-height});
     padding: 5em 0;
-    @include for-tablet-landscape-up {
+    @include for-tablet-landscape {
       flex-direction: row;
       justify-content: space-between;
       height: $header-height;
@@ -138,7 +145,7 @@ export default {
     &:hover {
       color: $attention-color;
     }
-    @include for-tablet-landscape-up {
+    @include for-tablet-landscape {
       margin: 0 0 0 5vw;
       min-width: fit-content;
       font-size: 0.8em;
