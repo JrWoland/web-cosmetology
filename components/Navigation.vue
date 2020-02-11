@@ -2,8 +2,15 @@
   <header class="main-header">
     <div class="main-header__logo-container">
       <nuxt-link class="main-header__logo" to="/">
-        <img class="main-header__logo-img" src="~/assets/svg/Logo.svg" alt="" />
-        <p class="main-header__logo-text">cosmetology</p>
+        <img
+          @click="isActive = false"
+          class="main-header__logo-img"
+          src="~/assets/svg/Logo.svg"
+          alt=""
+        />
+        <p @click="isActive = false" class="main-header__logo-text">
+          cosmetology
+        </p>
       </nuxt-link>
       <div @click="handleVisible" class="main-header__hamburger"><i>X</i></div>
     </div>
@@ -61,7 +68,7 @@ export default {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 $main-gap 0;
+    padding: 0 $desktop-gap 0;
   }
   &__logo-container {
     display: flex;
@@ -103,6 +110,7 @@ export default {
     font-weight: 700;
     font-size: $small-font;
     color: $font-color;
+    background-color: rgb(255, 255, 255);
     &.active {
       display: block;
     }

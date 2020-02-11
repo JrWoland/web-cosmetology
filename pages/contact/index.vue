@@ -1,7 +1,9 @@
 <template>
-  <h1>
-    contact
-  </h1>
+  <main>
+    <h1>
+      contact
+    </h1>
+  </main>
 </template>
 
 <script>
