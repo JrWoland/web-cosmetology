@@ -29,7 +29,7 @@ export default {
   color: white;
   text-transform: uppercase;
   transition: background-color 0.2s;
-  @include for-phone-portrait-up {
+  @include for-desktop-up {
     font-size: $medium-font;
   }
 
