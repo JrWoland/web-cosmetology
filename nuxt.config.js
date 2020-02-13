@@ -20,6 +20,13 @@ export default {
         rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=EB+Garamond:400,700|Open+Sans:300,700&display=swap&subset=latin-ext'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://use.fontawesome.com/releases/v5.7.1/css/all.css',
+        integrity:
+          'sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr',
+        crossorigin: 'anonymous'
       }
     ]
   },
