@@ -33,6 +33,9 @@ export default {
   text-align: center;
   color: $font-color;
   padding: 0 $mobile-gap 0;
+  @include for-tablet-landscape {
+    padding: 0 $desktop-gap 0;
+  }
   &__titles {
     display: flex;
     justify-content: center;
@@ -48,46 +51,35 @@ export default {
     line-height: $medium-font;
     font-weight: 300;
     text-transform: uppercase;
+    @include for-tablet-landscape {
+      font-size: $medium-font;
+      line-height: $medium-font;
+    }
   }
   &__title {
     font-family: $main-font;
     font-size: $medium-font;
     line-height: $medium-font;
     font-weight: 400;
+    @include for-tablet-landscape {
+      font-size: $large-font;
+      line-height: $large-font;
+    }
+    @include for-desktop-up {
+      font-size: $big-font;
+      line-height: $big-font;
+    }
   }
   &__subtitle {
     font-family: $second-font;
     font-size: $mobile-font;
     line-height: 1.5em;
+    @include for-tablet-landscape {
+      font-size: $small-font;
+    }
+    @include for-desktop-up {
+      line-height: 2em;
+    }
   }
 }
-
-// .promo-section {
-//   text-align: center;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   height: 100vh;
-//   &__item-gap {
-//     margin-top: 25px;
-//   }
-//   &__head {
-//     font-family: $second-font;
-//     font-size: $medium-font;
-//     line-height: $medium-font;
-//     font-weight: 300;
-//     text-transform: uppercase;
-//   }
-//   &__title {
-//     font-family: $main-font;
-//     font-size: $big-font;
-//     line-height: $big-font;
-//     font-weight: 400;
-//   }
-//   &__subtitle {
-//     font-family: $second-font;
-//     font-size: $small-font;
-//     line-height: 2em;
-//   }
-// }
 </style>
