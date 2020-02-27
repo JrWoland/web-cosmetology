@@ -1,5 +1,5 @@
 <template>
-  <button class="main-button">
+  <button :class="size" class="main-button">
     {{ buttonContent }}
   </button>
 </template>
@@ -11,6 +11,10 @@ export default {
     buttonContent: {
       type: String,
       default: 'Default'
+    },
+    size: {
+      type: String,
+      default: 'big'
     }
   }
 }
@@ -31,6 +35,10 @@ export default {
   transition: background-color 0.2s;
   @include for-desktop-up {
     font-size: $medium-font;
+  }
+  &.small {
+    // padding: 0.1em 1.7em;
+    font-size: $small-font;
   }
 
   &:hover {
