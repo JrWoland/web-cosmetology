@@ -12,7 +12,9 @@
           cosmetology
         </p>
       </nuxt-link>
-      <div @click="handleVisible" class="main-header__hamburger"><i>X</i></div>
+      <div @click="handleVisible" class="main-header__hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
     </div>
 
     <nav :class="{ active: isActive }" class="main-header__nav">

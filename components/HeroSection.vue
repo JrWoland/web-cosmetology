@@ -35,8 +35,11 @@ export default {
   width: 100%;
   overflow: hidden;
   text-align: center;
+  @include for-phone-landscape {
+    height: fit-content;
+    min-height: fit-content;
+  }
   @include for-tablet-landscape {
-    height: calc(100vh - #{$header-height});
     padding: 0 $desktop-gap 0;
   }
   &__titles *:nth-child(n) {
@@ -54,7 +57,7 @@ export default {
     font-size: $medium-font;
     line-height: 40px;
     font-weight: 400;
-    @include for-tablet-landscape {
+    @include for-tablet-landscape-up {
       font-size: $big-font;
       line-height: $big-font;
     }
@@ -68,7 +71,7 @@ export default {
     font-family: $second-font;
     font-size: $small-font;
     line-height: 20px;
-    @include for-tablet-landscape {
+    @include for-tablet-landscape-up {
       font-family: $second-font;
       font-size: $medium-font;
       line-height: 50px;
