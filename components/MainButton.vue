@@ -37,7 +37,6 @@ export default {
     font-size: $medium-font;
   }
   &.small {
-    // padding: 0.1em 1.7em;
     font-size: $small-font;
   }
 

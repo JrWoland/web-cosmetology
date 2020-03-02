@@ -27,14 +27,21 @@ export default {
   justify-content: space-between;
   padding: 10px;
   align-items: center;
-  border: 1px dashed rgb(58, 0, 128);
+  box-shadow: 5px 5px 10px 5px #ddd;
   text-align: center;
-  width: 50vw;
-  height: 50vh;
+  font-size: 16px;
+  :nth-child(n) {
+    margin-bottom: 20px;
+  }
   &__img {
     width: 100%;
   }
   &__title {
+    font-size: $medium-font;
+    font-weight: 400;
+  }
+  &__description {
+    font-family: $second-font;
     font-size: $small-font;
   }
 }
