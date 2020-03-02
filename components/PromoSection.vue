@@ -33,6 +33,7 @@ export default {
   text-align: center;
   color: $font-color;
   padding: 0 $mobile-gap 0;
+  height: 80vh;
   @include for-tablet-landscape {
     padding: 0 $desktop-gap 0;
   }
@@ -40,7 +41,7 @@ export default {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
   }
   &--item-gap {
     margin-top: 25px;
