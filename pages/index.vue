@@ -1,8 +1,9 @@
 <template>
   <main>
     <HeroSection />
-    <PromoSection />
     <ServicesSection />
+    <PromoSection />
+    <FooterSection />
   </main>
 </template>
 
@@ -10,11 +11,13 @@
 import HeroSection from '~/components/HeroSection'
 import PromoSection from '~/components/PromoSection'
 import ServicesSection from '~/components/ServicesSection'
+import FooterSection from '~/components/FooterSection'
 export default {
   components: {
     HeroSection,
     PromoSection,
-    ServicesSection
+    ServicesSection,
+    FooterSection
   }
 }
 </script>

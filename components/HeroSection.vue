@@ -1,15 +1,19 @@
 <template>
   <section class="hero-section">
     <div class="hero-section__titles">
-      <h1 class="hero-section__title">Essence of natural <br />Beauty</h1>
+      <h1 class="hero-section__title">
+        Essence of natural
+        <br />Beauty
+      </h1>
       <p class="hero-section__subtitle">
-        Together creeping heaven upon <br />third dominion be upon.
+        Together creeping heaven upon
+        <br />third dominion be upon.
       </p>
       <div class="hero-section__button">
         <MainButton button-content="services" />
       </div>
     </div>
-    <img class="hero-section__img" src="../assets/png/hero-image.png" alt="" />
+    <img class="hero-section__img" src="../assets/png/hero-image.png" alt />
   </section>
 </template>
 
@@ -47,14 +51,14 @@ export default {
   }
   &__titles {
     @include for-tablet-landscape {
+      margin-top: 40px;
       text-align: left;
       align-self: flex-start;
-      top: 60px;
     }
   }
   &__title {
     font-family: $main-font;
-    font-size: $medium-font;
+    font-size: $large-font;
     line-height: 40px;
     font-weight: 400;
     @include for-tablet-landscape-up {

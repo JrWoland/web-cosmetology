@@ -27,9 +27,8 @@ export default {
   justify-content: space-between;
   padding: 10px;
   align-items: center;
-  box-shadow: 5px 5px 10px 5px #ddd;
+  box-shadow: 0px 1px 6px 0px #e6e6e6;
   text-align: center;
-  font-size: 16px;
   :nth-child(n) {
     margin-bottom: 20px;
   }
@@ -37,6 +36,7 @@ export default {
     width: 100%;
   }
   &__title {
+    font-family: $main-font;
     font-size: $medium-font;
     font-weight: 400;
   }

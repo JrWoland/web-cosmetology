@@ -1,6 +1,6 @@
 <template>
   <section class="services-section">
-    <h2 class="services-section__title">Most popular procedures</h2>
+    <h2 class="services-section__title">Most popular services</h2>
     <div class="services-section__content">
       <ServiceCard class="services-section__item" />
       <ServiceCard class="services-section__item" />
@@ -23,9 +23,11 @@ export default {
 
 <style lang="scss" scoped>
 .services-section {
+  margin-top: 150px;
   padding: 0 $mobile-gap 0;
   color: $font-color;
   text-align: center;
+  min-height: 80vh;
   @include for-tablet-landscape {
     padding: 0 $desktop-gap 0;
   }
@@ -34,6 +36,9 @@ export default {
     font-family: $main-font;
     font-size: $medium-font;
     font-weight: 400;
+    @include for-desktop-up {
+      font-size: $large-font;
+    }
   }
   &__content {
     display: grid;
