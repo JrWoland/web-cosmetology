@@ -13,7 +13,11 @@
         <MainButton button-content="services" />
       </div>
     </div>
-    <img class="hero-section__img" src="../assets/png/hero-image.png" alt />
+    <img
+      class="hero-section__img"
+      src="../assets/png/avatar-angela.png"
+      alt="Women avatar"
+    />
   </section>
 </template>
 
@@ -44,10 +48,12 @@ export default {
     min-height: fit-content;
   }
   @include for-tablet-landscape {
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0 $desktop-gap 0;
   }
   &__titles *:nth-child(n) {
-    margin-top: 4vh;
+    margin-top: 3vh;
   }
   &__titles {
     @include for-tablet-landscape {
@@ -85,13 +91,14 @@ export default {
     margin-top: 20px;
   }
   &__img {
-    transform: translate(-192px, -180px) scale(0.5);
+    transform: translate(0px, 30px);
+    width: 90vw;
     z-index: -1;
     @include for-tablet-landscape {
       position: absolute;
-      bottom: 20px;
-      width: 100vw;
-      transform: translate(0, 0) scale(1.2);
+      right: 10px;
+      width: 45vw;
+      transform: translate(0, 0);
     }
   }
 }
