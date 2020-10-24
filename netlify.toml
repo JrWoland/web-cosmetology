@@ -4,5 +4,5 @@
 # Specific branch context: all deploys from this specific branch will inherit
 # these settings.
 [context.develop] # 'develop' is a branch name
-  command = "echo 'develop'"
-  base = "develop"
+  command = "echo 'dist'"
+  base = "dist"
