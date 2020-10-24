@@ -7,7 +7,7 @@
       </h1>
       <p class="hero-section__subtitle">
         Together creeping heaven upon
-        <br />third dominion be develop
+        <br />third dominion be develop3
       </p>
       <div class="hero-section__button">
         <MainButton button-content="services" />
