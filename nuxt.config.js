@@ -8,6 +8,9 @@ export default {
     host: '0.0.0.0' // default: localhost
   },
   head: {
+    htmlAttrs: {
+      lang: 'pl'
+    },
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },

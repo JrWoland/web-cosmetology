@@ -1,38 +1,27 @@
 const cosmetologyServices = [
   {
-    name: 'Manicure',
+    img: 'microderma',
+    name: 'Mikrodermabrazja',
     shortDescription:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis?',
-    longDescription:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae voluptate officia exercitationem delectus nihil quibusdam harum tempora fugiat aliquam sint, dolore veniam quo quaerat? Voluptatibus aspernatur magnam ipsam itaque veritatis sint quisquam aut soluta, iure, odit, vitae autem repudiandae sequi expedita asperiores quis. Voluptatibus aliquid optio officia laborum ex ratione? Minima, eos ducimus. Esse minus ducimus magnam non facilis, consequuntur, veniam asperiores molestias sint mollitia illum vitae maiores, omnis voluptates nostrum! Maxime quas distinctio reiciendis molestiae dolor ipsa error mollitia. Error hic sunt, incidunt possimus, nesciunt quasi expedita libero nobis obcaecati dolorum, doloremque reprehenderit quis. Amet nemo asperiores praesentium facere?'
+      'Mikrodermabrazja diamentowa polega na mechanicznym usuwaniu warstwy rogowej naskórka, czyli pozbyciu się starych, zrogowaciałych już komórek, nadmiaru sebum, pozostałości po makijażu i innych zanieczyszczeń.'
   },
   {
-    name: 'Pedicure',
+    img: 'lashes',
+    name: 'Stylizacja rzęs',
     shortDescription:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis?',
-    longDescription:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae voluptate officia exercitationem delectus nihil quibusdam harum tempora fugiat aliquam sint, dolore veniam quo quaerat? Voluptatibus aspernatur magnam ipsam itaque veritatis sint quisquam aut soluta, iure, odit, vitae autem repudiandae sequi expedita asperiores quis. Voluptatibus aliquid optio officia laborum ex ratione? Minima, eos ducimus. Esse minus ducimus magnam non facilis, consequuntur, veniam asperiores molestias sint mollitia illum vitae maiores, omnis voluptates nostrum! Maxime quas distinctio reiciendis molestiae dolor ipsa error mollitia. Error hic sunt, incidunt possimus, nesciunt quasi expedita libero nobis obcaecati dolorum, doloremque reprehenderit quis. Amet nemo asperiores praesentium facere?'
+      'Stylizacja rzęs to zabieg dla każdej kobiety, która marzy o pięknych, długich i gęstych rzęsach. Zabiegi zagęszczania rzęs różnią się między sobą. W zależności od wybranej metody efekt będzie delikatny i naturalny, lub spektakularny i teatralny.'
   },
   {
-    name: 'Lashes',
+    img: 'browns',
+    name: 'Stylizacja brwi',
     shortDescription:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis?',
-    longDescription:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae voluptate officia exercitationem delectus nihil quibusdam harum tempora fugiat aliquam sint, dolore veniam quo quaerat? Voluptatibus aspernatur magnam ipsam itaque veritatis sint quisquam aut soluta, iure, odit, vitae autem repudiandae sequi expedita asperiores quis. Voluptatibus aliquid optio officia laborum ex ratione? Minima, eos ducimus. Esse minus ducimus magnam non facilis, consequuntur, veniam asperiores molestias sint mollitia illum vitae maiores, omnis voluptates nostrum! Maxime quas distinctio reiciendis molestiae dolor ipsa error mollitia. Error hic sunt, incidunt possimus, nesciunt quasi expedita libero nobis obcaecati dolorum, doloremque reprehenderit quis. Amet nemo asperiores praesentium facere?'
+      'Brwi należą do najważniejszych elementów twarzy. Perfekcyjnie wystylizowane, zadbane brwi nadają twarzy zdrowy i wyrazisty wygląd, nawet w przypadku braku pełnego makijażu.'
   },
   {
-    name: 'Manicure',
+    img: 'peeling',
+    name: 'Peeling kawitacyjny',
     shortDescription:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis?',
-    longDescription:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae voluptate officia exercitationem delectus nihil quibusdam harum tempora fugiat aliquam sint, dolore veniam quo quaerat? Voluptatibus aspernatur magnam ipsam itaque veritatis sint quisquam aut soluta, iure, odit, vitae autem repudiandae sequi expedita asperiores quis. Voluptatibus aliquid optio officia laborum ex ratione? Minima, eos ducimus. Esse minus ducimus magnam non facilis, consequuntur, veniam asperiores molestias sint mollitia illum vitae maiores, omnis voluptates nostrum! Maxime quas distinctio reiciendis molestiae dolor ipsa error mollitia. Error hic sunt, incidunt possimus, nesciunt quasi expedita libero nobis obcaecati dolorum, doloremque reprehenderit quis. Amet nemo asperiores praesentium facere?'
-  },
-  {
-    name: 'Nails',
-    shortDescription:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, perspiciatis?',
-    longDescription:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae voluptate officia exercitationem delectus nihil quibusdam harum tempora fugiat aliquam sint, dolore veniam quo quaerat? Voluptatibus aspernatur magnam ipsam itaque veritatis sint quisquam aut soluta, iure, odit, vitae autem repudiandae sequi expedita asperiores quis. Voluptatibus aliquid optio officia laborum ex ratione? Minima, eos ducimus. Esse minus ducimus magnam non facilis, consequuntur, veniam asperiores molestias sint mollitia illum vitae maiores, omnis voluptates nostrum! Maxime quas distinctio reiciendis molestiae dolor ipsa error mollitia. Error hic sunt, incidunt possimus, nesciunt quasi expedita libero nobis obcaecati dolorum, doloremque reprehenderit quis. Amet nemo asperiores praesentium facere?'
+      'Zabieg jest przyjemny, trwa 20 minut, poprawia napięcie skóry i oczyszcza ją, rozjaśnia, usuwa resztki makijażu.W ten sposób skóra odzyskuje swój naturalny kolor, wygląda lepiej i zdrowo.'
   }
 ]
 

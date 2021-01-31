@@ -1,23 +1,32 @@
 <template>
   <section class="services-section">
-    <h2 class="services-section__title">Most popular services</h2>
+    <h2 class="services-section__title">Zabiegi</h2>
     <div class="services-section__content">
-      <ServiceCard class="services-section__item" />
-      <ServiceCard class="services-section__item" />
-      <ServiceCard class="services-section__item" />
-      <ServiceCard class="services-section__item" />
+      <ServiceCard
+        v-for="(service, index) in services"
+        :key="index"
+        :img="service.img"
+        :title="service.name"
+        :long-description="service.shortDescription"
+        class="services-section__item"
+      />
     </div>
   </section>
 </template>
 
 <script>
+import cosmetologyServices from '@/assets/js/cosmetologyServices.js'
 import ServiceCard from './ServiceCard'
 export default {
   name: 'ServicesSection',
   components: {
     ServiceCard
   },
-  directives: {}
+  data() {
+    return {
+      services: cosmetologyServices
+    }
+  }
 }
 </script>
 

@@ -1,21 +1,38 @@
 <template>
   <div class="card">
-    <img class="card__img" src="../assets/png/manicure.png" />
-    <h4 class="card__title">Manicure</h4>
+    <img :src="require(`~/assets/png/${img}.jpeg`)" class="card__img" />
+    <h4 class="card__title">{{ title }}</h4>
     <p class="card__description">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-      perferendis.
+      {{ longDescription }}
     </p>
-    <MainButton button-content="choose" size="small" />
+    <MainButton button-content="czytaj więcej" size="small" />
   </div>
 </template>
 
 <script>
-import MainButton from './MainButton'
+import MainButton from './MainButton.vue'
 export default {
   name: 'ServiceCard',
   components: {
     MainButton
+  },
+  props: {
+    img: {
+      type: String,
+      default: 'def'
+    },
+    title: {
+      type: String,
+      default: 'def'
+    },
+    shortDescription: {
+      type: String,
+      default: 'def'
+    },
+    longDescription: {
+      type: String,
+      default: 'def'
+    }
   }
 }
 </script>
@@ -24,13 +41,16 @@ export default {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 10px;
   align-items: center;
-  box-shadow: 0px 1px 6px 0px #e6e6e6;
-  text-align: center;
+  box-shadow: 0px 0px 3px 0px #e6e6e6;
+  text-align: left;
+  transition: box-shadow 0.3s;
   :nth-child(n) {
     margin-bottom: 20px;
+  }
+  &:hover {
+    box-shadow: 0px 1px 10px 0px #e6e6e6;
   }
   &__img {
     width: 100%;
@@ -42,7 +62,9 @@ export default {
   }
   &__description {
     font-family: $second-font;
+    flex-grow: 1;
     font-size: $small-font;
+    line-height: 1.5em;
   }
 }
 </style>

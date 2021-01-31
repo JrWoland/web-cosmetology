@@ -2,15 +2,16 @@
   <section class="hero-section">
     <div class="hero-section__titles">
       <h1 class="hero-section__title">
-        Essence of natural
-        <br />Beauty
+        Esencja naturalnego
+        <br />Piękna
       </h1>
       <p class="hero-section__subtitle">
-        Together creeping heaven upon
-        <br />third dominion be test1
+        Makijaż permanentny brwi<br />
+        Stylizacja rzęs<br />
+        Zabiegi odmładzające
       </p>
       <div class="hero-section__button">
-        <MainButton button-content="services" />
+        <MainButton button-content="więcej" />
       </div>
     </div>
     <img
@@ -57,7 +58,7 @@ export default {
   }
   &__titles {
     @include for-tablet-landscape {
-      margin-top: 40px;
+      margin-top: 60px;
       text-align: left;
       align-self: flex-start;
     }

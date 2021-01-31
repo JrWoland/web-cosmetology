@@ -9,7 +9,7 @@
           alt=""
         />
         <p @click="isActive = false" class="main-header__logo-text">
-          cosmetology
+          mgr. Angelika Apanowicz-Kozicka
         </p>
       </nuxt-link>
       <div @click="handleVisible" class="main-header__hamburger">
@@ -20,19 +20,16 @@
     <nav :class="{ active: isActive }" class="main-header__nav">
       <ul @click="handleVisible" class="main-header__list">
         <li class="main-header__list-item">
-          <nuxt-link to="/services"> Services </nuxt-link>
+          <nuxt-link to="/services"> Usługi </nuxt-link>
         </li>
         <li class="main-header__list-item">
-          <nuxt-link to="/gallery"> Gallery </nuxt-link>
+          <nuxt-link to="/gallery"> Galeria </nuxt-link>
         </li>
         <li class="main-header__list-item">
-          <nuxt-link to="/about"> About me </nuxt-link>
+          <nuxt-link to="/about"> O mnie </nuxt-link>
         </li>
         <li class="main-header__list-item">
-          <nuxt-link to="/blog"> Blog </nuxt-link>
-        </li>
-        <li class="main-header__list-item">
-          <nuxt-link to="contact"> Contact </nuxt-link>
+          <nuxt-link to="contact"> Kontakt </nuxt-link>
         </li>
       </ul>
     </nav>
