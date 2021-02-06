@@ -16,7 +16,7 @@
 
 <script>
 import cosmetologyServices from '@/assets/js/cosmetologyServices.js'
-import ServiceCard from './ServiceCard'
+import ServiceCard from './ServiceCard.vue'
 export default {
   name: 'ServicesSection',
   components: {

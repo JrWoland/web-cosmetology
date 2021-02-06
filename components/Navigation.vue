@@ -6,10 +6,10 @@
           @click="isActive = false"
           class="main-header__logo-img"
           src="~/assets/svg/Logo.svg"
-          alt=""
+          alt="logo gabinetu kosmetologicznego"
         />
         <p @click="isActive = false" class="main-header__logo-text">
-          mgr. Angelika Apanowicz-Kozicka
+          mgr Angelika Apanowicz-Kozicka
         </p>
       </nuxt-link>
       <div @click="handleVisible" class="main-header__hamburger">

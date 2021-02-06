@@ -1,12 +1,12 @@
 <template>
   <section class="hero-section">
     <div class="hero-section__titles">
-      <h1 class="hero-section__title">
-        Esencja naturalnego
-        <br />Piękna
-      </h1>
+      <header class="hero-section__title">
+        Gabinet<br />
+        Kosmetologiczny
+      </header>
       <p class="hero-section__subtitle">
-        Makijaż permanentny brwi<br />
+        Makijaż permanentny brwi,<br />
         Stylizacja rzęs<br />
         Zabiegi odmładzające
       </p>
@@ -16,7 +16,7 @@
     </div>
     <img
       class="hero-section__img"
-      src="../assets/png/avatar-angela.png"
+      src="../assets/png/avatar-angela-mid.png"
       alt="Women avatar"
     />
   </section>

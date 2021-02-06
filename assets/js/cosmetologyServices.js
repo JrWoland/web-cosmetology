@@ -1,11 +1,5 @@
 const cosmetologyServices = [
   {
-    img: 'microderma',
-    name: 'Mikrodermabrazja',
-    shortDescription:
-      'Mikrodermabrazja diamentowa polega na mechanicznym usuwaniu warstwy rogowej naskórka, czyli pozbyciu się starych, zrogowaciałych już komórek, nadmiaru sebum, pozostałości po makijażu i innych zanieczyszczeń.'
-  },
-  {
     img: 'lashes',
     name: 'Stylizacja rzęs',
     shortDescription:
@@ -13,9 +7,15 @@ const cosmetologyServices = [
   },
   {
     img: 'browns',
-    name: 'Stylizacja brwi',
+    name: 'Makijaż permanentny brwi',
     shortDescription:
       'Brwi należą do najważniejszych elementów twarzy. Perfekcyjnie wystylizowane, zadbane brwi nadają twarzy zdrowy i wyrazisty wygląd, nawet w przypadku braku pełnego makijażu.'
+  },
+  {
+    img: 'microderma',
+    name: 'Mikrodermabrazja',
+    shortDescription:
+      'Mikrodermabrazja diamentowa polega na mechanicznym usuwaniu warstwy rogowej naskórka, czyli pozbyciu się starych, zrogowaciałych już komórek, nadmiaru sebum, pozostałości po makijażu i innych zanieczyszczeń.'
   },
   {
     img: 'peeling',

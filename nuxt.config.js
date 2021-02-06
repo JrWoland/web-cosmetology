@@ -11,14 +11,17 @@ export default {
     htmlAttrs: {
       lang: 'pl'
     },
-    title: process.env.npm_package_name || '',
+    title: 'Gabinet kosmetologiczny Białystok. Angelika Apanowicz-Kozicka',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        hid: 'description',
+        content:
+          'Gabinet kosmetologiczny Białystok. Makijaż permanentny brwi, mikrodermabrazja, peeling kawitacyjny, stylizacja i przedłużanie rzęs.',
+        keywords:
+          'kosmetologia, białystok, stylizacja rzęs, makijaż permanentny brwi'
       }
     ],
     link: [
