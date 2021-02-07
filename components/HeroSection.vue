@@ -2,8 +2,7 @@
   <section class="hero-section">
     <div class="hero-section__titles">
       <header class="hero-section__title">
-        Gabinet<br />
-        Kosmetologiczny
+        Gabinet Kosmetologiczny
       </header>
       <p class="hero-section__subtitle">
         Makijaż permanentny brwi,<br />
@@ -58,9 +57,8 @@ export default {
   }
   &__titles {
     @include for-tablet-landscape {
-      margin-top: 60px;
       text-align: left;
-      align-self: flex-start;
+      max-width: 50vw;
     }
   }
   &__title {
@@ -94,7 +92,6 @@ export default {
   &__img {
     transform: translate(0px, 30px);
     width: 90vw;
-    z-index: -1;
     @include for-tablet-landscape {
       position: absolute;
       right: 10px;

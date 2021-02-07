@@ -21,7 +21,7 @@ export default {
         content:
           'Gabinet kosmetologiczny Białystok. Makijaż permanentny brwi, mikrodermabrazja, peeling kawitacyjny, stylizacja i przedłużanie rzęs.',
         keywords:
-          'kosmetologia, białystok, stylizacja rzęs, makijaż permanentny brwi'
+          'kosmetologia, białystok, stylizacja rzęs, przedłużanie rzęs, makijaż permanentny brwi, mikrodermabrazja, peeling kawitacyjny, białystok'
       }
     ],
     link: [

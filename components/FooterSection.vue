@@ -10,7 +10,7 @@
       <ul>
         <li>+48 555 555 555</li>
         <li>email@email.com</li>
-        <li>Białystok, Komisji Edukacji Narodowej 50/lok 9</li>
+        <li>Białystok, Komisji Edukacji Narodowej 50/lok.9</li>
       </ul>
       <SocialMedia class="footer-section__media" />
     </address>

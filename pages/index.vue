@@ -1,9 +1,9 @@
 <template>
   <main>
     <HeroSection />
-    <ServicesSection />
-    <PromoSection />
-    <PriceSection />
+    <ServicesSection id="services" />
+    <PromoSection id="promo" />
+    <PriceSection id="price" />
   </main>
 </template>
 

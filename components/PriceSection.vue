@@ -4,32 +4,36 @@
     <div class="price-section__service-types">
       <div class="price-section__service">
         <p class="price-section__title">Rzęsy</p>
+        <span class="price-section__small-subtitle">
+          (cena w nawiasie dotyczy uzupełnienia)
+        </span>
         <ul>
-          <li>metoda 2d <span>100PLN</span></li>
-          <li>metoda 3d <span>100PLN</span></li>
-          <li>metoda 4d <span>100PLN</span></li>
-          <li>metoda 5d <span>100PLN</span></li>
+          <li>metoda 2d - <span>110PLN (80PLN)</span></li>
+          <li>metoda 3d - <span>130PLN (100PLN)</span></li>
+          <li>metoda 4/6d - <span>150PLN (120PLN)</span></li>
+          <li>metoda 5/8d - <span>160PLN (130PLN)</span></li>
+          <li>Mega Volume - <span>180PLN (140PLN)</span></li>
         </ul>
       </div>
       <div class="price-section__service">
         <p class="price-section__title">Mikrodermabracja</p>
         <ul>
-          <li><span>100PLN</span></li>
+          <li>diamentowa - <span>90PLN</span></li>
+          <li>diamentowa + kwas - <span>130PLN</span></li>
         </ul>
       </div>
       <div class="price-section__service">
         <p class="price-section__title">Peeling kawitacyjny</p>
         <ul>
-          <li><span>100PLN</span></li>
-          <li><span>100PLN</span></li>
-          <li><span>100PLN</span></li>
-          <li><span>100PLN</span></li>
+          <li>maska algowa - <span>80PLN</span></li>
+          <li>sonoforeza + maska algowa - <span>130PLN</span></li>
         </ul>
       </div>
       <div class="price-section__service">
         <p class="price-section__title">Makijaż permanentny brwi</p>
         <ul>
-          <li><span>100PLN</span></li>
+          <li><span>600PLN</span></li>
+          <li><span>korekta do 3 mscy - bezpłatna</span></li>
         </ul>
       </div>
     </div>
@@ -61,16 +65,23 @@ export default {
 
   &__service {
     @include box-shadow;
+    margin: 1em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 1em;
     padding: 10px;
+    font-size: $mobile-font;
+    @include for-desktop-up {
+      font-size: 14px;
+    }
   }
 
   &__title {
     font-weight: 700;
     margin: 0.5em 0;
+  }
+
+  &__small-subtitle {
+    font-size: 10px;
   }
 }
 </style>

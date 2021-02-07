@@ -2,13 +2,13 @@
   <div class="app-container">
     <Navigation />
     <nuxt />
-    <FooterSection />
+    <FooterSection id="footer" />
   </div>
 </template>
 
 <script>
-import Navigation from '~/components/Navigation'
-import FooterSection from '~/components/FooterSection'
+import Navigation from '~/components/Navigation.vue'
+import FooterSection from '~/components/FooterSection.vue'
 export default {
   components: {
     Navigation,

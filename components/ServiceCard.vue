@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <img :src="require(`~/assets/png/${img}.jpeg`)" class="card__img" />
+    <video :src="img" autoplay loop playsinline muted class="card__img"></video>
     <h4 class="card__title">{{ title }}</h4>
     <p class="card__description">
       {{ longDescription }}

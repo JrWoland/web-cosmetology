@@ -20,16 +20,16 @@
     <nav :class="{ active: isActive }" class="main-header__nav">
       <ul @click="handleVisible" class="main-header__list">
         <li class="main-header__list-item">
-          <nuxt-link to="/services"> Usługi </nuxt-link>
+          <a href="#services"> Usługi </a>
         </li>
         <li class="main-header__list-item">
-          <nuxt-link to="/gallery"> Galeria </nuxt-link>
+          <a href="#price"> Cennik </a>
         </li>
         <li class="main-header__list-item">
-          <nuxt-link to="/about"> O mnie </nuxt-link>
+          <a href="#promo"> O mnie </a>
         </li>
         <li class="main-header__list-item">
-          <nuxt-link to="contact"> Kontakt </nuxt-link>
+          <a href="#footer"> Kontakt </a>
         </li>
       </ul>
     </nav>
