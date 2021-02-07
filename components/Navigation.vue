@@ -6,10 +6,10 @@
           @click="isActive = false"
           class="main-header__logo-img"
           src="~/assets/svg/Logo.svg"
-          alt=""
+          alt="logo gabinetu kosmetologicznego"
         />
         <p @click="isActive = false" class="main-header__logo-text">
-          cosmetology
+          mgr Angelika Apanowicz-Kozicka
         </p>
       </nuxt-link>
       <div @click="handleVisible" class="main-header__hamburger">
@@ -20,19 +20,16 @@
     <nav :class="{ active: isActive }" class="main-header__nav">
       <ul @click="handleVisible" class="main-header__list">
         <li class="main-header__list-item">
-          <nuxt-link to="/services"> Services </nuxt-link>
+          <a href="#services"> Usługi </a>
         </li>
         <li class="main-header__list-item">
-          <nuxt-link to="/gallery"> Gallery </nuxt-link>
+          <a href="#price"> Cennik </a>
         </li>
         <li class="main-header__list-item">
-          <nuxt-link to="/about"> About me </nuxt-link>
+          <a href="#promo"> O mnie </a>
         </li>
         <li class="main-header__list-item">
-          <nuxt-link to="/blog"> Blog </nuxt-link>
-        </li>
-        <li class="main-header__list-item">
-          <nuxt-link to="contact"> Contact </nuxt-link>
+          <a href="#footer"> Kontakt </a>
         </li>
       </ul>
     </nav>

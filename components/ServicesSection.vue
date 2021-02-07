@@ -1,31 +1,42 @@
 <template>
   <section class="services-section">
-    <h2 class="services-section__title">Most popular procedures</h2>
+    <h2 class="services-section__title">Zabiegi</h2>
     <div class="services-section__content">
-      <ServiceCard class="services-section__item" />
-      <ServiceCard class="services-section__item" />
-      <ServiceCard class="services-section__item" />
-      <ServiceCard class="services-section__item" />
+      <ServiceCard
+        v-for="(service, index) in services"
+        :key="index"
+        :img="service.img"
+        :title="service.name"
+        :long-description="service.shortDescription"
+        class="services-section__item"
+      />
     </div>
   </section>
 </template>
 
 <script>
-import ServiceCard from './ServiceCard'
+import cosmetologyServices from '@/assets/js/cosmetologyServices.js'
+import ServiceCard from './ServiceCard.vue'
 export default {
   name: 'ServicesSection',
   components: {
     ServiceCard
   },
-  directives: {}
+  data() {
+    return {
+      services: cosmetologyServices
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 .services-section {
+  margin-top: 150px;
   padding: 0 $mobile-gap 0;
   color: $font-color;
   text-align: center;
+  min-height: 80vh;
   @include for-tablet-landscape {
     padding: 0 $desktop-gap 0;
   }
@@ -34,6 +45,9 @@ export default {
     font-family: $main-font;
     font-size: $medium-font;
     font-weight: 400;
+    @include for-desktop-up {
+      font-size: $large-font;
+    }
   }
   &__content {
     display: grid;

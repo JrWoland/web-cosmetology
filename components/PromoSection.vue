@@ -1,30 +1,32 @@
 <template>
-  <section class="promo-section">
+  <section id="promo-section" class="promo-section">
     <div class="promo-section__titles">
-      <h2 class="promo-section__head promo-section--item-gap">ABOUT</h2>
-      <h1 class="promo-section__title promo-section--item-gap">
-        Come and you will be Inspired!
-      </h1>
+      <header class="promo-section__head promo-section--item-gap">
+        O MNIE
+      </header>
+      <figure class="promo-section--item-gap">
+        <img
+          class="promo-section__about-me-img"
+          src="~/assets/jpg/about-me-img.jpg"
+          alt="Trulli"
+        />
+      </figure>
       <p class="promo-section__subtitle promo-section--item-gap">
-        It’s the end of summer the sweltering heat makes human sweat in the
-        night and makes the plants and trees wilt even in the moonlit nights.
-        The eastern wind breeze brings an eerie feeling, that the monsoon clouds
-        are soon coming,
+        Magister kosmetologii, absolwentka Uniwersytetu Medycznego w
+        Białymsotku. Od kilku lat konsekwentnie dostarczam najwyższej jakości
+        usługi z zakresu zabiegów odmładzających, stylizacji rzęs oraz makijażu
+        permanentnego brwi.
       </p>
-      <div class="promo-section__button promo-section--item-gap">
-        <MainButton button-content="read more" />
-      </div>
+      <SocialMedia />
     </div>
   </section>
 </template>
 
 <script>
-import MainButton from './MainButton'
+import SocialMedia from '~/components/SocialMedia.vue'
 export default {
   name: 'PromoSection',
-  components: {
-    MainButton
-  }
+  components: { SocialMedia }
 }
 </script>
 
@@ -33,7 +35,9 @@ export default {
   text-align: center;
   color: $font-color;
   padding: 0 $mobile-gap 0;
-  height: 80vh;
+  margin: 2em 0;
+  min-height: 60vh;
+  background-color: #ffb7000b;
   @include for-tablet-landscape {
     padding: 0 $desktop-gap 0;
   }
@@ -42,13 +46,20 @@ export default {
     justify-content: center;
     flex-direction: column;
     height: 100%;
+    padding: 20px 0;
   }
+
+  &__about-me-img {
+    width: 200px;
+    border-radius: 150px;
+  }
+
   &--item-gap {
     margin-top: 25px;
   }
   &__head {
     font-family: $second-font;
-    font-size: $small-font;
+    font-size: $medium-font;
     line-height: $medium-font;
     font-weight: 300;
     text-transform: uppercase;

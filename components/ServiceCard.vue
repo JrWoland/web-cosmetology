@@ -1,21 +1,38 @@
 <template>
   <div class="card">
-    <img class="card__img" src="../assets/png/manicure.png" />
-    <h4 class="card__title">Manicure</h4>
+    <video :src="img" autoplay loop playsinline muted class="card__img"></video>
+    <h4 class="card__title">{{ title }}</h4>
     <p class="card__description">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-      perferendis.
+      {{ longDescription }}
     </p>
-    <MainButton button-content="choose" size="small" />
+    <MainButton button-content="czytaj więcej" size="small" />
   </div>
 </template>
 
 <script>
-import MainButton from './MainButton'
+import MainButton from './MainButton.vue'
 export default {
   name: 'ServiceCard',
   components: {
     MainButton
+  },
+  props: {
+    img: {
+      type: String,
+      default: 'def'
+    },
+    title: {
+      type: String,
+      default: 'def'
+    },
+    shortDescription: {
+      type: String,
+      default: 'def'
+    },
+    longDescription: {
+      type: String,
+      default: 'def'
+    }
   }
 }
 </script>
@@ -24,25 +41,30 @@ export default {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 10px;
   align-items: center;
-  box-shadow: 5px 5px 10px 5px #ddd;
-  text-align: center;
-  font-size: 16px;
+  box-shadow: 0px 0px 3px 0px #e6e6e6;
+  text-align: left;
+  transition: box-shadow 0.3s;
   :nth-child(n) {
     margin-bottom: 20px;
+  }
+  &:hover {
+    box-shadow: 0px 1px 10px 0px #e6e6e6;
   }
   &__img {
     width: 100%;
   }
   &__title {
+    font-family: $main-font;
     font-size: $medium-font;
     font-weight: 400;
   }
   &__description {
     font-family: $second-font;
+    flex-grow: 1;
     font-size: $small-font;
+    line-height: 1.5em;
   }
 }
 </style>
