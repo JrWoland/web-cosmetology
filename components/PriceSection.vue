@@ -8,32 +8,66 @@
           (cena w nawiasie dotyczy uzupełnienia)
         </span>
         <ul>
-          <li>metoda 2d - <span>110PLN (80PLN)</span></li>
-          <li>metoda 3d - <span>130PLN (100PLN)</span></li>
-          <li>metoda 4/6d - <span>150PLN (120PLN)</span></li>
-          <li>metoda 5/8d - <span>160PLN (130PLN)</span></li>
-          <li>Mega Volume - <span>180PLN (140PLN)</span></li>
+          <li>
+            <span class="price-section__service-subtype">metoda 2d</span
+            ><span class="price-section__service-price">110zł (80zł)</span>
+          </li>
+          <li>
+            <span class="price-section__service-subtype">metoda 3d</span
+            ><span class="price-section__service-price">130zł (100zł)</span>
+          </li>
+          <li>
+            <span class="price-section__service-subtype">metoda 4/6d</span
+            ><span class="price-section__service-price">150zł (120zł)</span>
+          </li>
+          <li>
+            <span class="price-section__service-subtype">metoda 5/8d</span
+            ><span class="price-section__service-price">160zł (130zł)</span>
+          </li>
+          <li>
+            <span class="price-section__service-subtype">Mega Volume</span
+            ><span class="price-section__service-price">180zł (140zł)</span>
+          </li>
         </ul>
       </div>
       <div class="price-section__service">
         <p class="price-section__title">Mikrodermabracja</p>
         <ul>
-          <li>diamentowa - <span>90PLN</span></li>
-          <li>diamentowa + kwas - <span>130PLN</span></li>
+          <li>
+            <span class="price-section__service-subtype">diamentowa</span
+            ><span class="price-section__service-price">90zł</span>
+          </li>
+          <li>
+            <span class="price-section__service-subtype"
+              >diamentowa + kwas</span
+            >
+            <span class="price-section__service-price">130zł</span>
+          </li>
         </ul>
       </div>
       <div class="price-section__service">
         <p class="price-section__title">Peeling kawitacyjny</p>
         <ul>
-          <li>maska algowa - <span>80PLN</span></li>
-          <li>sonoforeza + maska algowa - <span>130PLN</span></li>
+          <li>
+            <span class="price-section__service-subtype">maska algowa</span>
+            <span class="price-section__service-price">80zł</span>
+          </li>
+          <li>
+            <span class="price-section__service-subtype">
+              sonoforeza + maska algowa</span
+            >
+            <span class="price-section__service-price">130zł</span>
+          </li>
         </ul>
       </div>
       <div class="price-section__service">
         <p class="price-section__title">Makijaż permanentny brwi</p>
         <ul>
-          <li><span>600PLN</span></li>
-          <li><span>korekta do 3 mscy - bezpłatna</span></li>
+          <li>
+            <span class="price-section__small-subtitle"
+              >(korekta do 3 mscy bezpłatna)</span
+            ><span class="price-section__service-price">600zł</span>
+          </li>
         </ul>
       </div>
     </div>
@@ -48,7 +82,7 @@ export default {
 
 <style lang="scss" scoped>
 .price-section {
-  text-align: center;
+  text-align: left;
   color: $font-color;
   padding: 0 $mobile-gap 0;
   min-height: 30vh;
@@ -60,7 +94,7 @@ export default {
   &__service-types {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   }
 
   &__service {
@@ -70,9 +104,23 @@ export default {
     flex-direction: column;
     padding: 10px;
     font-size: $mobile-font;
+
+    li {
+      margin: 5px 0;
+    }
     @include for-desktop-up {
       font-size: 14px;
     }
+  }
+
+  &__service-subtype {
+    display: inline-block;
+    width: 48%;
+  }
+  &__service-price {
+    display: inline-block;
+    width: 48%;
+    text-align: right;
   }
 
   &__title {
