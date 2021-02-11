@@ -1,6 +1,6 @@
 <template>
   <section class="price-section">
-    <h2>Cennik</h2>
+    <h2 class="price-section__title-price">Cennik</h2>
     <div class="price-section__service-types">
       <div class="price-section__service">
         <p class="price-section__title">Rzęsy</p>
@@ -87,6 +87,9 @@ export default {
   padding: 0 $mobile-gap 0;
   min-height: 30vh;
   font-family: $second-font;
+  &__title-price {
+    text-align: center;
+  }
   @include for-tablet-landscape {
     padding: 0 $desktop-gap 0;
   }
