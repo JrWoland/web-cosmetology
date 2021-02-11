@@ -1,9 +1,9 @@
 <template>
   <section id="promo-section" class="promo-section">
     <div class="promo-section__titles">
-      <header class="promo-section__head promo-section--item-gap">
+      <h2 class="promo-section__head promo-section--item-gap">
         O MNIE
-      </header>
+      </h2>
       <figure class="promo-section--item-gap">
         <img
           class="promo-section__about-me-img"
