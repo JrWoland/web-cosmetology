@@ -1,9 +1,7 @@
 <template>
   <section class="hero-section">
     <div class="hero-section__titles">
-      <header class="hero-section__title">
-        Gabinet Kosmetologiczny
-      </header>
+      <h1 class="hero-section__title">Gabinet Kosmetologiczny</h1>
       <p class="hero-section__subtitle">
         Makijaż permanentny brwi,<br />
         Stylizacja rzęs<br />

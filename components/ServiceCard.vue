@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <video :src="img" autoplay loop playsinline muted class="card__img"></video>
-    <h4 class="card__title">{{ title }}</h4>
+    <h3 class="card__title">{{ title }}</h3>
     <p class="card__description">
       {{ longDescription }}
     </p>
