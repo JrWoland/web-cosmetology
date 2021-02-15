@@ -1,12 +1,15 @@
 <template>
   <section class="hero-section">
     <div class="hero-section__titles">
-      <h1 class="hero-section__title">Gabinet Kosmetologiczny</h1>
-      <p class="hero-section__subtitle">
-        Makijaż permanentny brwi,<br />
-        Stylizacja rzęs<br />
-        Zabiegi odmładzające
-      </p>
+      <img
+        @click="isActive = false"
+        class="hero-section__logo-img"
+        src="~/assets/png/logo.png"
+        alt="logo gabinetu kosmetologicznego"
+      />
+      <h1 class="hero-section__subtitle">
+        Makijaż permanentny brwi, stylizacja rzęs, sabiegi pielęgnacyjne
+      </h1>
       <div class="hero-section__button">
         <MainButton button-content="więcej" />
       </div>
@@ -50,12 +53,18 @@ export default {
     justify-content: space-between;
     padding: 0 $desktop-gap 0;
   }
+  &__logo-img {
+    width: 200px;
+    @include for-tablet-landscape {
+      width: 350px;
+    }
+  }
   &__titles *:nth-child(n) {
     margin-top: 3vh;
   }
   &__titles {
     @include for-tablet-landscape {
-      text-align: left;
+      text-align: center;
       max-width: 50vw;
     }
   }
@@ -77,10 +86,11 @@ export default {
     margin-top: 40px;
     font-family: $second-font;
     font-size: $small-font;
+    font-weight: 400;
     line-height: 20px;
     @include for-tablet-landscape-up {
       font-family: $second-font;
-      font-size: $medium-font;
+      font-size: $small-font;
       line-height: 50px;
     }
   }

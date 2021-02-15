@@ -3,7 +3,7 @@
     <address class="footer-section__address">
       <img
         class="footer-section__logo-img"
-        src="~/assets/svg/Logo.svg"
+        src="~/assets/png/logo.png"
         alt="logo image"
       />
       <h3>Kontakt</h3>
@@ -62,7 +62,7 @@ export default {
   }
 
   &__logo-img {
-    width: 40px;
+    width: 200px;
   }
 }
 </style>
