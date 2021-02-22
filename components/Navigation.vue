@@ -2,15 +2,14 @@
   <header class="main-header">
     <div class="main-header__logo-container">
       <nuxt-link class="main-header__logo" to="/">
-        <img
-          @click="isActive = false"
-          class="main-header__logo-img"
-          src="~/assets/svg/Logo.svg"
-          alt="logo gabinetu kosmetologicznego"
-        />
-        <p @click="isActive = false" class="main-header__logo-text">
-          mgr Angelika Apanowicz-Kozicka
-        </p>
+        <div @click="isActive = false">
+          <h1 class="main-header__logo-text">
+            Gabinet Kosmetologiczny
+          </h1>
+          <h2 class="main-header__logo-sub-text">
+            mgr Angelika Apanowicz-Kozicka
+          </h2>
+        </div>
       </nuxt-link>
       <div @click="handleVisible" class="main-header__hamburger">
         <i class="fas fa-bars"></i>
@@ -84,6 +83,9 @@ export default {
     align-items: center;
     color: $main-second-color;
     height: $header-height;
+    @include for-tablet-landscape {
+      padding-bottom: 10px;
+    }
   }
   &__hamburger {
     width: 20px;
@@ -92,20 +94,26 @@ export default {
       display: none;
     }
   }
-  &__logo-img {
-    height: 40%;
-    @include for-desktop-up {
-      height: 70%;
-    }
-  }
   &__logo-text {
     font-family: $main-font, serif;
+    font-weight: 400;
     font-size: 1em;
     letter-spacing: 2px;
     padding: 0 15px 0;
     @include for-desktop-up {
       height: 70%;
       font-size: 2em;
+    }
+  }
+  &__logo-sub-text {
+    font-weight: 300;
+    font-family: $main-font, serif;
+    font-size: 0.6em;
+    letter-spacing: 2px;
+    padding: 0 15px 0;
+    @include for-desktop-up {
+      height: 70%;
+      font-size: 1em;
     }
   }
 

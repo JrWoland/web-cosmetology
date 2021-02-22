@@ -5,7 +5,9 @@
     <p class="card__description">
       {{ longDescription }}
     </p>
-    <MainButton button-content="czytaj więcej" size="small" />
+    <NuxtLink :to="{ path: `/${path}` }">
+      <MainButton button-content="czytaj więcej" size="small" />
+    </NuxtLink>
   </div>
 </template>
 
@@ -32,6 +34,10 @@ export default {
     longDescription: {
       type: String,
       default: 'def'
+    },
+    path: {
+      type: String,
+      default: '#'
     }
   }
 }

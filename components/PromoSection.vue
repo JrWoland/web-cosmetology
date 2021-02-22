@@ -37,7 +37,7 @@ export default {
   padding: 0 $mobile-gap 0;
   margin: 2em 0;
   min-height: 60vh;
-  background-color: #ffb7000b;
+  background-color: $second-background-color;
   @include for-tablet-landscape {
     padding: 0 $desktop-gap 0;
   }
