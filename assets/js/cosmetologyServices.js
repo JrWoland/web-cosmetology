@@ -31,14 +31,7 @@ const cosmetologyServices = [
     <p>Z zabiegu korzystają zazwyczaj osoby, które mają krótkie, rzadkie i cienkie rzęsy bądź też nie chcące tracić czasu na codzienny makijaż czy demakijaż. Dobrze dobrane i przedłużone rzęsy nadają oczom blasku i wyrazistości. Dzięki aplikacji możemy cieszyć się pięknym spojrzeniem przez długi czas, bez względu na porę roku czy dnia.</p>
 
     <h2>Informacje o zabiegu</h2>
-    <p>Zabieg stylizacji rzęs polega na doklejeniu rzęsy syntetycznej lub do naturalnej rzęsy przy pomocy pęset oraz specjalnego kleju. Pęsety służą do precyzyjnego separowania każdego włoska oraz do łapania i przyklejania sztucznej rzęsy. Doklejona rzęsa jest indywidualnie dobierana do stanu rzęs klientki, ich długości oraz kształtu oka, co daje efekt pięknego przedłużenia, zagęszczenia i podkręcenia. Zabieg ten jest całkowicie bezbolesny i bezpieczny dla oczu. W trakcie jego trwania klientka znajduje się w wygodnej pozycji leżącej.</p>
-
-    <p>Przedłużanie rzęs to obecnie hit w kosmetyce XXI wieku, podobnie jak manicure
-    hybrydowy. Jest to idealny sposób dla tych kobiet, którym należy na dobrym
-    wyglądzie,
-    ale nie chcą lub nie mają czasu na malowanie rzęs tuszem. Poza tym tusz do rzęs,
-    nawet ten, wysokopólkowy, zawsze się kruszy, rozmazuje, nie jest trwały w 100%.
-    A przedłużone rzęsy i owszem.</p>`
+    <p>Zabieg stylizacji rzęs polega na doklejeniu rzęsy syntetycznej do naturalnej przy pomocy pęset oraz specjalnego kleju. Pęsety służą do precyzyjnego separowania każdego włoska oraz do łapania i przyklejania sztucznej rzęsy. Doklejona rzęsa jest indywidualnie dobierana do stanu rzęs klientki, ich długości oraz kształtu oka, co daje efekt pięknego przedłużenia, zagęszczenia i podkręcenia. Zabieg ten jest całkowicie bezbolesny i bezpieczny dla oczu. W trakcie jego trwania klientka znajduje się w wygodnej pozycji leżącej.</p>`
   },
   {
     path: 'makijaz-permanentny-brwi',
@@ -68,7 +61,7 @@ const cosmetologyServices = [
       <p>Bezwzględnie, zabiegu tego nie mogą wykonywać osoby z zaburzeniami krzepliwości krwi, cukrzycą, łuszczycą, zmagające się z infekcją i będące w kuracji lekami sterydowymi. </p>
 
       <h2>Informacje o zabiegu</h2>
-      <p>Makijaż permanentny polega na umieszczeniu odpowiedniego pigmentu tuż pod powierzchnią naskórka. Zabieg wykonywny jest za pomocą igły, w miejscowym znieczuleniu (postaci specjalnej maści lub kremu). Nakłucie skóry powoduje mikrouszkodzenie tkanki, dlatego bezpośrednio po zabiegu pojawiają się strupki. Regeneracja po wykonaniu makijażu permanentnego może trwać od 1 do 2 miesięcy. W tym czasie kolejne warstwy naskórka złuszczają się, a wraz z nimi usuwana jest część wprowadzonego pigmentu. Dlatego konieczne jest powtórzenie zabiegu, które wzmocni i ewentualnie skoryguje efekt. </p>
+      <p>Makijaż permanentny polega na umieszczeniu odpowiedniego pigmentu tuż pod powierzchnią naskórka. Zabieg wykonywany jest za pomocą igły, w miejscowym znieczuleniu (postaci specjalnej maści lub kremu). Nakłucie skóry powoduje mikrouszkodzenie tkanki, dlatego bezpośrednio po zabiegu pojawiają się strupki. Regeneracja po wykonaniu makijażu permanentnego może trwać od 1 do 2 miesięcy. W tym czasie kolejne warstwy naskórka złuszczają się, a wraz z nimi usuwana jest część wprowadzonego pigmentu. Dlatego konieczne jest powtórzenie zabiegu, które wzmocni i ewentualnie skoryguje efekt. </p>
       `
   },
   {
