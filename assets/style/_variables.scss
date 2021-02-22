@@ -5,6 +5,7 @@ $main-second-color: #bdae6a;
 $font-color: #6e6e6e;
 $attention-color: #FF0082;
 $main-background-color: white;
+$second-background-color: #ffb7000b;
 $border-color: #dadada;
 
 // fonts size base 1em = 16px;
@@ -18,7 +19,7 @@ $mobile-font: 12px;
 
 //font families
 $main-font: 'EB Garamond';
-$second-font: 'Open Sans';
+$second-font: 'Lato';
 
 //font-weigth
 
@@ -27,5 +28,5 @@ $light: 300;
 
 //layout
 $mobile-gap: 1em;
-$desktop-gap: 6em;
-$header-height: 65px;
+$desktop-gap: 8em;
+$header-height: 70px;

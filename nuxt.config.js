@@ -27,7 +27,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css?family=EB+Garamond:400,700|Open+Sans:300,700&display=swap&subset=latin-ext'
+          'https://fonts.googleapis.com/css?family=EB+Garamond:400,700|Lato:300,700&display=swap&subset=latin-ext'
       },
       {
         rel: 'stylesheet',

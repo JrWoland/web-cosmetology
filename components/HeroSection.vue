@@ -1,15 +1,16 @@
 <template>
   <section class="hero-section">
     <div class="hero-section__titles">
+      <h1 class="hero-section__title">Profesjonalne zabiegi</h1>
+      <h1 class="hero-section__subtitle">
+        Makijaż permanentny brwi, stylizacja rzęs, zabiegi pielęgnacyjne
+      </h1>
       <img
         @click="isActive = false"
         class="hero-section__logo-img"
         src="~/assets/png/logo.png"
-        alt="logo gabinetu kosmetologicznego"
+        alt="logo gabinetu"
       />
-      <h1 class="hero-section__subtitle">
-        Makijaż permanentny brwi, stylizacja rzęs, sabiegi pielęgnacyjne
-      </h1>
       <div class="hero-section__button">
         <MainButton button-content="więcej" />
       </div>
@@ -40,7 +41,8 @@ export default {
   align-items: center;
   color: $font-color;
   padding: 0 $mobile-gap 0;
-  height: calc(100vh - #{$header-height});
+  height: calc(120vh - #{$header-height});
+  min-height: min-content;
   width: 100%;
   overflow: hidden;
   text-align: center;
@@ -49,6 +51,7 @@ export default {
     min-height: fit-content;
   }
   @include for-tablet-landscape {
+    height: calc(100vh - #{$header-height});
     flex-direction: row;
     justify-content: space-between;
     padding: 0 $desktop-gap 0;
@@ -56,7 +59,7 @@ export default {
   &__logo-img {
     width: 200px;
     @include for-tablet-landscape {
-      width: 350px;
+      width: 20vw;
     }
   }
   &__titles *:nth-child(n) {
@@ -90,7 +93,7 @@ export default {
     line-height: 20px;
     @include for-tablet-landscape-up {
       font-family: $second-font;
-      font-size: $small-font;
+      font-size: $medium-font;
       line-height: 50px;
     }
   }

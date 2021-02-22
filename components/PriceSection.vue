@@ -84,6 +84,7 @@ export default {
 .price-section {
   text-align: left;
   color: $font-color;
+  margin: 50px 0;
   padding: 0 $mobile-gap 0;
   min-height: 30vh;
   font-family: $second-font;

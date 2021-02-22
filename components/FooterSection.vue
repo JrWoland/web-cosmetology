@@ -8,9 +8,13 @@
       />
       <h3>Kontakt</h3>
       <ul>
-        <li>+48 555 555 555</li>
-        <li>email@email.com</li>
-        <li>Białystok, Komisji Edukacji Narodowej 50/lok.9</li>
+        <li class="footer-section__adress-item">+48 516 355 412</li>
+        <li class="footer-section__adress-item">
+          gabinet.apanowiczkozicka@gmail.com
+        </li>
+        <li class="footer-section__adress-item">
+          Białystok, Komisji Edukacji Narodowej 50/lok.9
+        </li>
       </ul>
       <SocialMedia class="footer-section__media" />
     </address>
@@ -53,7 +57,7 @@ export default {
   }
 
   &__address {
-    margin: 50px 0;
+    margin: 50px 20px;
     text-align: center;
   }
 
@@ -63,6 +67,10 @@ export default {
 
   &__logo-img {
     width: 200px;
+  }
+
+  &__adress-item {
+    line-height: 1.6em;
   }
 }
 </style>

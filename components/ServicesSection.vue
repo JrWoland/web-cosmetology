@@ -7,6 +7,7 @@
         :key="index"
         :img="service.img"
         :title="service.name"
+        :path="service.path"
         :long-description="service.shortDescription"
         class="services-section__item"
       />
