@@ -20,6 +20,7 @@
     </address>
     <div class="footer-section__map">
       <iframe
+        title="Service position"
         width="100%"
         height="100%"
         frameborder="0"

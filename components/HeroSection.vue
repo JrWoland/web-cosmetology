@@ -102,11 +102,11 @@ export default {
   }
   &__img {
     transform: translate(0px, 30px);
-    width: 90vw;
+    width: 85vw;
     @include for-tablet-landscape {
       position: absolute;
       right: 10px;
-      width: 45vw;
+      width: 40vw;
       transform: translate(0, 0);
     }
   }
