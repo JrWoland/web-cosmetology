@@ -13,7 +13,7 @@
       </figure>
       <p class="promo-section__subtitle promo-section--item-gap">
         Magister kosmetologii, absolwentka Uniwersytetu Medycznego w
-        Białymsotku. Od kilku lat konsekwentnie dostarczam najwyższej jakości
+        Białymstoku. Od kilku lat konsekwentnie dostarczam najwyższej jakości
         usługi z zakresu zabiegów odmładzających, stylizacji rzęs oraz makijażu
         permanentnego brwi.
       </p>
