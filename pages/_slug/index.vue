@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <main class="wrapper">
     <section class="service-article">
       <article>
         <h1>{{ service.name }}</h1>
@@ -19,7 +19,7 @@
         <span>{{ service.name }}</span>
       </NuxtLink>
     </aside>
-  </div>
+  </main>
 </template>
 
 <script>

@@ -31,7 +31,17 @@ const cosmetologyServices = [
     <p>Z zabiegu korzystają zazwyczaj osoby, które mają krótkie, rzadkie i cienkie rzęsy bądź też nie chcące tracić czasu na codzienny makijaż czy demakijaż. Dobrze dobrane i przedłużone rzęsy nadają oczom blasku i wyrazistości. Dzięki aplikacji możemy cieszyć się pięknym spojrzeniem przez długi czas, bez względu na porę roku czy dnia.</p>
 
     <h2>Informacje o zabiegu</h2>
-    <p>Zabieg stylizacji rzęs polega na doklejeniu rzęsy syntetycznej do naturalnej przy pomocy pęset oraz specjalnego kleju. Pęsety służą do precyzyjnego separowania każdego włoska oraz do łapania i przyklejania sztucznej rzęsy. Doklejona rzęsa jest indywidualnie dobierana do stanu rzęs klientki, ich długości oraz kształtu oka, co daje efekt pięknego przedłużenia, zagęszczenia i podkręcenia. Zabieg ten jest całkowicie bezbolesny i bezpieczny dla oczu. W trakcie jego trwania klientka znajduje się w wygodnej pozycji leżącej.</p>`
+    <p>Zabieg stylizacji rzęs polega na doklejeniu rzęsy syntetycznej do naturalnej przy pomocy pęset oraz specjalnego kleju. Pęsety służą do precyzyjnego separowania każdego włoska oraz do łapania i przyklejania sztucznej rzęsy. W zależności od wybranej metody, do jednej rzęsy można przykleić od jednej do nawet ośmiu i więcej rzęs. Jednak metoda stylizacji jest indywidualnie dobierana do stanu rzęs klientki, ich długości oraz kształtu oka. W rezultacie otrzymujemy efekt pięknego przedłużenia, zagęszczenia i podkręcenia. Zabieg ten jest całkowicie bezbolesny i bezpieczny dla oczu. W trakcie jego trwania klientka znajduje się w wygodnej pozycji leżącej.</p>
+
+    <h2>Efekty po zabiegu</h2>
+    <img src="/logo2.png" width="30px" alt="picture" />
+    <p>
+      Do wyboru mamy wiele metod stylizacji. Oznaczane są zwykle cyframi i literkami.
+
+    </p>
+
+
+    `
   },
   {
     path: 'makijaz-permanentny-brwi',
@@ -54,11 +64,11 @@ const cosmetologyServices = [
       <h2>Informacje ogólne</h2>
       <ul>
         <li>czas trwania: <b>2h-3h</b></li>
-        <li>cena: <b>650zł</b></li>
+        <li>cena: <b>600zł</b></li>
       </ul>
 
       <h2>Przeciwskazania</h2>
-      <p>Bezwzględnie, zabiegu tego nie mogą wykonywać osoby z zaburzeniami krzepliwości krwi, cukrzycą, łuszczycą, zmagające się z infekcją i będące w kuracji lekami sterydowymi. </p>
+      <p>Bezwzględnie, zabiegu tego nie mogą wykonywać osoby z zaburzeniami krzepliwości krwi, cukrzycą, łuszczycą, zmagające się z infekcją i będące w kuracji lekami sterydowymi.</p>
 
       <h2>Informacje o zabiegu</h2>
       <p>Makijaż permanentny polega na umieszczeniu odpowiedniego pigmentu tuż pod powierzchnią naskórka. Zabieg wykonywany jest za pomocą igły, w miejscowym znieczuleniu (postaci specjalnej maści lub kremu). Nakłucie skóry powoduje mikrouszkodzenie tkanki, dlatego bezpośrednio po zabiegu pojawiają się strupki. Regeneracja po wykonaniu makijażu permanentnego może trwać od 1 do 2 miesięcy. W tym czasie kolejne warstwy naskórka złuszczają się, a wraz z nimi usuwana jest część wprowadzonego pigmentu. Dlatego konieczne jest powtórzenie zabiegu, które wzmocni i ewentualnie skoryguje efekt. </p>
@@ -67,12 +77,12 @@ const cosmetologyServices = [
   {
     path: 'mikrodermabrazja',
     head: {
-      title: 'Mikrodermabrazja Białystok',
+      title: 'Mikrodermabrazja diamentowa Białystok',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Mikrodermabrazja Białystok'
+          content: 'Mikrodermabrazja diamentowa Białystok'
         }
       ]
     },
@@ -112,7 +122,7 @@ const cosmetologyServices = [
       'https://v.ftcdn.net/01/82/12/02/700_F_182120202_3Fs2IC9MawxzRcCX4enz50QPXYke0jmu_ST.mp4',
     name: 'Peeling kawitacyjny',
     shortDescription:
-      'Zabieg jest przyjemny, trwa 20 minut, poprawia napięcie skóry i oczyszcza ją, rozjaśnia, usuwa resztki makijażu.W ten sposób skóra odzyskuje swój naturalny kolor, wygląda lepiej i zdrowo.',
+      'Zabieg jest przyjemny, trwa 20 minut, poprawia napięcie skóry i oczyszcza ją, rozjaśnia, usuwa resztki makijażu. W ten sposób skóra odzyskuje swój naturalny kolor, wygląda lepiej i zdrowo.',
     htmlContent: `
       <h2>Informacje ogólne</h2>
       <ul>
