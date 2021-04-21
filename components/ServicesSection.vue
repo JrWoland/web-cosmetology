@@ -5,10 +5,10 @@
       <ServiceCard
         v-for="(service, index) in services"
         :key="index"
-        :img="service.img"
+        :video="service.video"
         :title="service.name"
         :path="service.path"
-        :long-description="service.shortDescription"
+        :description="service.shortDescription"
         class="services-section__item"
       />
     </div>

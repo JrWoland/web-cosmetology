@@ -1,9 +1,16 @@
 <template>
   <div class="card">
-    <video :src="img" autoplay loop playsinline muted class="card__img"></video>
+    <video
+      :src="video"
+      autoplay
+      loop
+      playsinline
+      muted
+      class="card__img"
+    ></video>
     <h3 class="card__title">{{ title }}</h3>
     <p class="card__description">
-      {{ longDescription }}
+      {{ description }}
     </p>
     <NuxtLink :to="{ path: `/${path}` }">
       <MainButton button-content="czytaj więcej" size="small" />
@@ -19,7 +26,7 @@ export default {
     MainButton
   },
   props: {
-    img: {
+    video: {
       type: String,
       default: 'def'
     },
@@ -31,7 +38,7 @@ export default {
       type: String,
       default: 'def'
     },
-    longDescription: {
+    description: {
       type: String,
       default: 'def'
     },

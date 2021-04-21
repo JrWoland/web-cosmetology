@@ -2,71 +2,12 @@
   <section class="price-section">
     <h2 class="price-section__title-price">Cennik</h2>
     <div class="price-section__service-types">
-      <div class="price-section__service">
-        <p class="price-section__title">Rzęsy</p>
-        <span class="price-section__small-subtitle">
-          (cena w nawiasie dotyczy uzupełnienia)
-        </span>
+      <div v-for="service in services" class="price-section__service">
+        <p class="price-section__title">{{ service.name }}</p>
         <ul>
-          <li>
-            <span class="price-section__service-subtype">metoda 2d</span
-            ><span class="price-section__service-price">110zł (80zł)</span>
-          </li>
-          <li>
-            <span class="price-section__service-subtype">metoda 3d</span
-            ><span class="price-section__service-price">130zł (100zł)</span>
-          </li>
-          <li>
-            <span class="price-section__service-subtype">metoda 4/6d</span
-            ><span class="price-section__service-price">150zł (120zł)</span>
-          </li>
-          <li>
-            <span class="price-section__service-subtype">metoda 5/8d</span
-            ><span class="price-section__service-price">160zł (130zł)</span>
-          </li>
-          <li>
-            <span class="price-section__service-subtype">Mega Volume</span
-            ><span class="price-section__service-price">180zł (140zł)</span>
-          </li>
-        </ul>
-      </div>
-      <div class="price-section__service">
-        <p class="price-section__title">Mikrodermabracja</p>
-        <ul>
-          <li>
-            <span class="price-section__service-subtype">diamentowa</span
-            ><span class="price-section__service-price">90zł</span>
-          </li>
-          <li>
-            <span class="price-section__service-subtype"
-              >diamentowa + kwas</span
-            >
-            <span class="price-section__service-price">130zł</span>
-          </li>
-        </ul>
-      </div>
-      <div class="price-section__service">
-        <p class="price-section__title">Peeling kawitacyjny</p>
-        <ul>
-          <li>
-            <span class="price-section__service-subtype">maska algowa</span>
-            <span class="price-section__service-price">80zł</span>
-          </li>
-          <li>
-            <span class="price-section__service-subtype">
-              sonoforeza + maska algowa</span
-            >
-            <span class="price-section__service-price">130zł</span>
-          </li>
-        </ul>
-      </div>
-      <div class="price-section__service">
-        <p class="price-section__title">Makijaż permanentny brwi</p>
-        <ul>
-          <li>
-            <span class="price-section__small-subtitle"
-              >(korekta do 3 mscy bezpłatna)</span
-            ><span class="price-section__service-price">600zł</span>
+          <li v-for="price in service.prices">
+            <span class="price-section__service-subtype">{{ price.type }}</span
+            ><span class="price-section__service-price">{{ price.value }}</span>
           </li>
         </ul>
       </div>
@@ -75,8 +16,14 @@
 </template>
 
 <script>
+import cosmetologyServices from '@/assets/js/cosmetologyServices.js'
 export default {
-  name: 'PriceSection'
+  name: 'PriceSection',
+  data() {
+    return {
+      services: cosmetologyServices
+    }
+  }
 }
 </script>
 
@@ -89,6 +36,8 @@ export default {
   min-height: 30vh;
   font-family: $second-font;
   &__title-price {
+    font-family: $main-font;
+    font-size: $large-font;
     text-align: center;
   }
   @include for-tablet-landscape {
@@ -97,8 +46,8 @@ export default {
 
   &__service-types {
     display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 
   &__service {
@@ -110,24 +59,28 @@ export default {
     font-size: $mobile-font;
 
     li {
-      margin: 5px 0;
+      margin: 15px 0;
+      list-style-type: disc;
     }
     @include for-desktop-up {
-      font-size: 14px;
+      font-size: $small-font;
     }
   }
 
   &__service-subtype {
     display: inline-block;
-    width: 48%;
+    width: 65%;
   }
   &__service-price {
     display: inline-block;
-    width: 48%;
+    width: 35%;
     text-align: right;
   }
 
   &__title {
+    font-family: $main-font;
+    font-size: $medium-font;
+    letter-spacing: 0.1em;
     font-weight: 700;
     margin: 0.5em 0;
   }

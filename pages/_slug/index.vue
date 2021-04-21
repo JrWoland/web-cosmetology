@@ -1,14 +1,65 @@
 <template>
   <main class="wrapper">
-    <section class="service-article">
-      <article>
-        <h1>{{ service.name }}</h1>
-        <div v-html="service.htmlContent">
-          {{ service.htmlContent }}
-        </div>
-      </article>
-    </section>
-    <aside class="service-aside">
+    <article class="service-article">
+      <header class="service-article__header">
+        <h1>{{ service.name.toUpperCase() }}</h1>
+        <p>{{ service.shortDescription }}</p>
+      </header>
+
+      <section class="service-article__section">
+        <h2>Informacje ogólne</h2>
+        <p v-if="service.time">
+          <span>Czas trwania zabiegu: </span>{{ service.time }}
+        </p>
+        <h2 id="price">Cennik</h2>
+        <ul v-if="service.prices.length">
+          <li v-for="price in service.prices">
+            {{ price.type }}: {{ price.value }}
+          </li>
+        </ul>
+      </section>
+
+      <section
+        v-if="service.details.contraindications.length"
+        class="service-article__section"
+      >
+        <h2>Przeciwskazania</h2>
+        <ul>
+          <li v-for="contraindication in service.details.contraindications">
+            {{ contraindication }}
+          </li>
+        </ul>
+      </section>
+
+      <section
+        v-if="service.details.indications.length"
+        class="service-article__section"
+      >
+        <h2>Wskazania</h2>
+        <ul>
+          <li v-for="indication in service.details.indications">
+            {{ indication }}
+          </li>
+        </ul>
+      </section>
+
+      <section
+        v-if="service.details.aboutService"
+        class="service-article__section"
+      >
+        <h2>Przebieg zabiegu</h2>
+        <p>{{ service.details.aboutService }}</p>
+      </section>
+
+      <section
+        v-if="service.details.afterServiceEffects"
+        class="service-article__section"
+      >
+        <h2>Efekty po zabiegu</h2>
+        <p>{{ service.details.afterServiceEffects }}</p>
+      </section>
+    </article>
+    <aside id="services" class="service-aside">
       <h2 class="service-aside__title">Zobacz inne zabiegi</h2>
       <NuxtLink
         v-for="(service, index) in restOfServices"
@@ -44,6 +95,7 @@ export default {
 
 <style lang="scss">
 .wrapper {
+  padding-top: 50px;
   font-family: $second-font;
   color: $font-color;
 }
@@ -52,15 +104,22 @@ export default {
   @include for-tablet-landscape {
     padding: 0 $desktop-gap 100px;
   }
+
+  &__section {
+    margin-top: 60px;
+  }
+
   h1 {
     margin: 20px 0 10px;
+    font-family: $second-font;
+    font-size: $large-font;
     letter-spacing: 2px;
     font-weight: 700;
-    font-size: $large-font;
   }
 
   h2 {
     margin: 40px 0 10px;
+    font-family: $second-font;
     font-weight: 700;
     @include for-tablet-landscape {
       font-size: $medium-font;
@@ -77,6 +136,7 @@ export default {
 
   li {
     line-height: 1.75em;
+    list-style: disc;
     @include for-tablet-landscape {
       font-size: $small-font;
     }
@@ -98,6 +158,7 @@ export default {
   }
 
   &__title {
+    font-family: $second-font;
     margin: 30px 0;
     width: 100%;
   }
