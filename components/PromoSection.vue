@@ -12,10 +12,21 @@
         />
       </figure>
       <p class="promo-section__subtitle promo-section--item-gap">
-        Magister kosmetologii, absolwentka Uniwersytetu Medycznego w
-        Białymstoku. Od kilku lat konsekwentnie dostarczam najwyższej jakości
-        usługi z zakresu zabiegów odmładzających, stylizacji rzęs oraz makijażu
-        permanentnego brwi.
+        Cześć! Mam na imię Angelika i chciałabym zostać Twoim Kosmetologiem
+        <br />
+        Jestem absolwentką Uniwersytetu Medycznego w Białymstoku, ukończyłam
+        wyższe studia magisterskie na kierunku Kosmetologia. Poza główną wiedzą
+        zdobytą na studiach, konsekwentnie od początku swojej przygody z
+        Kosmetologią, uczestniczę w różnego rodzaju szkoleniach z tej dziedziny.
+        Moim konikiem zawodowym jest stylizacja rzęs, w której obracam się
+        aktywnie od ok. 3 lat. Pasjonuję się również w stylizacji brwi – w mojej
+        ofercie znajdziesz usługi takie jak: makijaż permanentny czy henna
+        pudrowa. Na bieżąco doszkalam się także w dziedzinie pielęgnacji skóry i
+        poszerzam ofertę o zabiegi pielęgnacyjne. Pracuję wyłącznie na
+        profesjonalnych i wysokojakościowych produktach. Przy każdym zabiegu,
+        wnikliwie staram się określić Twoje oczekiwania i sprostować im na
+        najwyższym poziomie, tak abyś zawsze wychodziła ode mnie zadowolona.
+        Zapraszam do kontaktu.
       </p>
       <SocialMedia />
     </div>
@@ -83,6 +94,7 @@ export default {
     }
   }
   &__subtitle {
+    text-align: justify;
     font-family: $second-font;
     font-size: $mobile-font;
     line-height: 1.5em;

@@ -20,14 +20,13 @@
     </address>
     <div class="footer-section__map">
       <iframe
-        title="Service position"
+        title="Salon Kosmetyczny mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d149.54657638023136!2d23.08460240858811!3d53.15066687420173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffdc039327343%3A0x4ccd2bf730761d63!2sGabinet%20Kosmetologiczny%20Mgr%20Angelika%20Apanowicz-Kozicka!5e0!3m2!1spl!2spl!4v1617116134152!5m2!1spl!2spl"
         width="100%"
         height="100%"
-        frameborder="0"
-        scrolling="no"
-        marginheight="0"
-        marginwidth="0"
-        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Bia%C5%82ystok%20Komisji%20Edukacji%20narodowej%2050&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
       ></iframe>
     </div>
   </footer>
