@@ -1,10 +1,16 @@
 <template>
   <section class="hero-section">
     <div class="hero-section__titles">
-      <h1 class="hero-section__title">Profesjonalne zabiegi</h1>
-      <h1 class="hero-section__subtitle">
-        Makijaż permanentny brwi, stylizacja rzęs, zabiegi pielęgnacyjne
-      </h1>
+      <header>
+        <h1 class="hero-section__title">Profesjonalne zabiegi</h1>
+        <h1 class="hero-section__subtitle">
+          <ul class="hero-section__list">
+            <li class="hero-section__list__item">Makijaż permanentny brwi</li>
+            <li class="hero-section__list__item">Stylizacja rzęs</li>
+            <li class="hero-section__list__item">Zabiegi pielęgnacyjne</li>
+          </ul>
+        </h1>
+      </header>
       <img
         @click="isActive = false"
         class="hero-section__logo-img"
@@ -63,7 +69,7 @@ export default {
     }
   }
   &__titles *:nth-child(n) {
-    margin-top: 3vh;
+    margin-top: 1vh;
   }
   &__titles {
     @include for-tablet-landscape {

@@ -71,13 +71,19 @@ export default {
   &__title {
     font-family: $main-font;
     font-size: $medium-font;
-    font-weight: 400;
+    font-weight: 700;
+    text-align: center;
   }
   &__description {
     font-family: $second-font;
     flex-grow: 1;
-    font-size: $small-font;
+    font-size: $mobile-font;
     line-height: 1.5em;
+    text-align: left;
+    @include for-tablet-landscape {
+      font-size: $small-font;
+      line-height: 1.5em;
+    }
   }
 }
 </style>

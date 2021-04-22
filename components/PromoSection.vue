@@ -94,6 +94,7 @@ export default {
     }
   }
   &__subtitle {
+    text-align: justify;
     font-family: $second-font;
     font-size: $mobile-font;
     line-height: 1.5em;

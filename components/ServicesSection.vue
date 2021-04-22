@@ -44,8 +44,8 @@ export default {
   &__title {
     margin: 1.2em 0;
     font-family: $main-font;
-    font-size: $medium-font;
-    font-weight: 400;
+    font-size: $large-font;
+    font-weight: 700;
     @include for-desktop-up {
       font-size: $large-font;
     }

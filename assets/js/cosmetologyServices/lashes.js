@@ -10,6 +10,10 @@ export default {
       }
     ]
   },
+  heroImg: {
+    src: 'service-img/lashes.jpg',
+    alt: 'zdjecie brwi'
+  },
   video:
     'https://v.ftcdn.net/01/16/46/46/240_F_116464602_0yalaGaN0DHPwUSKXxAMvNwW58hmBcH2_ST.mp4',
   name: 'Stylizacja rzęs',
@@ -64,7 +68,7 @@ export default {
     afterServiceEffects: '',
     imgs: [
       {
-        src: '/logo2.png',
+        src: 'service-img/lashes.png',
         alt: 'zdjecie'
       },
       {

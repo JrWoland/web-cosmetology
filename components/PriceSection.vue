@@ -2,15 +2,15 @@
   <section class="price-section">
     <h2 class="price-section__title-price">Cennik</h2>
     <div class="price-section__service-types">
-      <div v-for="service in services" class="price-section__service">
+      <section v-for="service in services" class="price-section__service">
         <p class="price-section__title">{{ service.name }}</p>
-        <ul>
-          <li v-for="price in service.prices">
+        <ul class="price-section__list">
+          <li v-for="price in service.prices" class="price-section__list__item">
             <span class="price-section__service-subtype">{{ price.type }}</span
             ><span class="price-section__service-price">{{ price.value }}</span>
           </li>
         </ul>
-      </div>
+      </section>
     </div>
   </section>
 </template>
@@ -47,20 +47,28 @@ export default {
   &__service-types {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    @include for-tablet-landscape {
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
   }
 
   &__service {
-    @include box-shadow;
+    // @include box-shadow;
     margin: 1em;
     display: flex;
     flex-direction: column;
     padding: 10px;
     font-size: $mobile-font;
-
-    li {
+  }
+  &__list {
+    padding-left: 0px;
+    &__item {
+      display: flex;
       margin: 15px 0;
+      padding: 15px 0;
       list-style-type: disc;
+      border-bottom: 1px solid $border-color;
     }
     @include for-desktop-up {
       font-size: $small-font;
@@ -68,11 +76,11 @@ export default {
   }
 
   &__service-subtype {
-    display: inline-block;
+    display: block;
     width: 65%;
   }
   &__service-price {
-    display: inline-block;
+    display: block;
     width: 35%;
     text-align: right;
   }
@@ -80,7 +88,6 @@ export default {
   &__title {
     font-family: $main-font;
     font-size: $medium-font;
-    letter-spacing: 0.1em;
     font-weight: 700;
     margin: 0.5em 0;
   }

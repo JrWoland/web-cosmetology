@@ -10,6 +10,10 @@ export default {
       }
     ]
   },
+  heroImg: {
+    src: 'service-img/micro.jpg',
+    alt: 'zdjecie brwi'
+  },
   video:
     'https://v.ftcdn.net/01/32/11/98/240_F_132119893_fS9zzOB017rgKKXtEMYN8HD2GGlAvqxQ_ST.mp4',
   name: 'Mikrodermabrazja diamentowa',

@@ -1,5 +1,8 @@
 <template>
   <main class="wrapper">
+    <div class="hero-img">
+      <img :src="service.heroImg.src" :alt="service.heroImg.src" />
+    </div>
     <article class="service-article">
       <header class="service-article__header">
         <h1>{{ service.name.toUpperCase() }}</h1>
@@ -95,9 +98,17 @@ export default {
 
 <style lang="scss">
 .wrapper {
-  padding-top: 50px;
+  padding-top: 0px;
   font-family: $second-font;
   color: $font-color;
+}
+.hero-img {
+  overflow: hidden;
+  max-height: 400px;
+  img {
+    width: 100%;
+    transform: translateY(-40%);
+  }
 }
 .service-article {
   padding: 0 $mobile-gap 100px;
@@ -111,15 +122,18 @@ export default {
 
   h1 {
     margin: 20px 0 10px;
-    font-family: $second-font;
-    font-size: $large-font;
+    font-family: $main-font;
+    font-size: $medium-font;
     letter-spacing: 2px;
     font-weight: 700;
+    @include for-tablet-landscape {
+      font-size: $large-font;
+    }
   }
 
   h2 {
     margin: 40px 0 10px;
-    font-family: $second-font;
+    font-family: $main-font;
     font-weight: 700;
     @include for-tablet-landscape {
       font-size: $medium-font;
