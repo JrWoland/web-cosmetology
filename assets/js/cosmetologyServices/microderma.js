@@ -11,7 +11,7 @@ export default {
     ]
   },
   heroImg: {
-    src: 'service-img/micro.jpg',
+    src: '/service-img/micro.jpg',
     alt: 'zdjecie brwi'
   },
   video:

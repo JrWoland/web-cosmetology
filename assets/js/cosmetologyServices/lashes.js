@@ -11,7 +11,7 @@ export default {
     ]
   },
   heroImg: {
-    src: 'service-img/lashes.jpg',
+    src: '/service-img/lashes.jpg',
     alt: 'zdjecie brwi'
   },
   video:

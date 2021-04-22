@@ -11,7 +11,7 @@ export default {
     ]
   },
   heroImg: {
-    src: 'service-img/peeling.jpg',
+    src: '/service-img/peeling.jpg',
     alt: 'zdjecie brwi'
   },
   video:

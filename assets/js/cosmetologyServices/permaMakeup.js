@@ -11,7 +11,7 @@ export default {
     ]
   },
   heroImg: {
-    src: 'service-img/browns.jpg',
+    src: '/service-img/browns.jpg',
     alt: 'zdjecie brwi'
   },
   video:
