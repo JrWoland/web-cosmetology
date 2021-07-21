@@ -23,23 +23,23 @@ export default {
   prices: [
     {
       type: 'metoda 2d',
-      value: '110zł (80zł)'
+      value: '120zł (90zł)'
     },
     {
       type: 'metoda 3d',
-      value: '130zł (100zł)'
+      value: '140zł (110zł)'
     },
     {
       type: 'metoda 4/6d',
-      value: '150zł (120zł)'
-    },
-    {
-      type: 'metoda 5/8d',
       value: '160zł (130zł)'
     },
     {
+      type: 'metoda 5/8d',
+      value: '170zł (140zł)'
+    },
+    {
       type: 'Mega Volume',
-      value: '180zł (140zł)'
+      value: '190zł (150zł)'
     }
   ],
   details: {
