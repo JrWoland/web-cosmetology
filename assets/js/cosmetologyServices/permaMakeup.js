@@ -23,7 +23,11 @@ export default {
   prices: [
     {
       type: 'Powder&Ombre Brows ',
-      value: '600zł'
+      value: '750zł'
+    },
+    {
+      type: 'Dodatkowe dopigmentowanie (do 2-mcy po korekcie) ',
+      value: '150zł'
     },
     {
       type: 'korekta do 3 mscy bezpłatna',
@@ -39,7 +43,7 @@ export default {
     }
   ],
   details: {
-    indications: '',
+    indications: [],
     contraindications: [
       'zaburzenia krzepliwości krwi',
       'cukrzyca',

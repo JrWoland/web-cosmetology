@@ -62,6 +62,9 @@ export default {
     justify-content: space-between;
     padding: 0 $desktop-gap 0;
   }
+  &__list {
+    padding: 0;
+  }
   &__logo-img {
     width: 200px;
     @include for-tablet-landscape {

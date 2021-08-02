@@ -9,59 +9,60 @@
         <p>{{ service.shortDescription }}</p>
       </header>
 
-      <section class="service-article__section">
-        <h2>Informacje ogólne</h2>
-        <p v-if="service.time">
-          <span>Czas trwania zabiegu: </span>{{ service.time }}
-        </p>
-        <h2 id="price">Cennik</h2>
-        <ul v-if="service.prices.length">
-          <li v-for="price in service.prices">
-            {{ price.type }}: {{ price.value }}
-          </li>
-        </ul>
-      </section>
+      <div class="service-article__info">
+        <section class="service-article__section">
+          <h2>Informacje ogólne</h2>
+          <p v-if="service.time">
+            <span>Czas trwania zabiegu: </span>{{ service.time }}
+          </p>
+        </section>
+        <section class="service-article__section">
+          <h2 id="price">Cennik</h2>
+          <ul v-if="service.prices.length">
+            <li v-for="price in service.prices">
+              {{ price.type }}: {{ price.value }}
+            </li>
+          </ul>
+        </section>
+      </div>
 
-      <section
-        v-if="service.details.contraindications.length"
-        class="service-article__section"
-      >
-        <h2>Przeciwskazania</h2>
-        <ul>
-          <li v-for="contraindication in service.details.contraindications">
-            {{ contraindication }}
-          </li>
-        </ul>
-      </section>
+      <div class="service-article__info">
+        <section
+          v-if="service.details.contraindications.length"
+          class="service-article__section"
+        >
+          <h2>Przeciwskazania</h2>
+          <ul>
+            <li v-for="contraindication in service.details.contraindications">
+              {{ contraindication }}
+            </li>
+          </ul>
+        </section>
 
-      <section
-        v-if="service.details.indications.length"
-        class="service-article__section"
-      >
-        <h2>Wskazania</h2>
-        <ul>
-          <li v-for="indication in service.details.indications">
-            {{ indication }}
-          </li>
-        </ul>
-      </section>
+        <section
+          v-if="service.details.indications.length"
+          class="service-article__section"
+        >
+          <h2>Wskazania</h2>
+          <ul>
+            <li v-for="indication in service.details.indications">
+              {{ indication }}
+            </li>
+          </ul>
+        </section>
+      </div>
 
-      <section
-        v-if="service.details.aboutService"
-        class="service-article__section"
-      >
+      <section v-if="service.details.aboutService">
         <h2>Przebieg zabiegu</h2>
         <p>{{ service.details.aboutService }}</p>
       </section>
 
-      <section
-        v-if="service.details.afterServiceEffects"
-        class="service-article__section"
-      >
+      <section v-if="service.details.afterServiceEffects">
         <h2>Efekty po zabiegu</h2>
         <p>{{ service.details.afterServiceEffects }}</p>
       </section>
     </article>
+
     <aside id="services" class="service-aside">
       <h2 class="service-aside__title">Zobacz inne zabiegi</h2>
       <NuxtLink
@@ -111,28 +112,43 @@ export default {
   }
 }
 .service-article {
+  margin-top: 30px;
   padding: 0 $mobile-gap 100px;
   @include for-tablet-landscape {
     padding: 0 $desktop-gap 100px;
   }
 
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include for-tablet-landscape {
+      flex-direction: row;
+    }
+  }
+
   &__section {
-    margin-top: 60px;
+    @include box-shadow;
+    margin: 30px 0px;
+    padding: 30px;
+    @include for-tablet-landscape {
+      width: 48%;
+    }
   }
 
   h1 {
-    margin: 20px 0 10px;
     font-family: $main-font;
     font-size: $medium-font;
     letter-spacing: 2px;
     font-weight: 700;
     @include for-tablet-landscape {
       font-size: $large-font;
+      margin: 50px 0 10px;
     }
   }
 
   h2 {
-    margin: 40px 0 10px;
+    margin: 10px 0 10px;
     font-family: $main-font;
     font-weight: 700;
     @include for-tablet-landscape {
@@ -144,7 +160,7 @@ export default {
     font-size: $small-font;
     line-height: 1.75em;
     @include for-tablet-landscape {
-      margin: 15px 0;
+      margin: 5px 0;
     }
   }
 

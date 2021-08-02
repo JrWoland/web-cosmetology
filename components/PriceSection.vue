@@ -54,12 +54,13 @@ export default {
   }
 
   &__service {
-    // @include box-shadow;
-    margin: 1em;
+    margin: 40px 0px 0px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
     font-size: $mobile-font;
+    @include for-tablet-landscape {
+      margin: 1em;
+    }
   }
   &__list {
     padding-left: 0px;

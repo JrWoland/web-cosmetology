@@ -33,7 +33,7 @@ export default {
     }
   ],
   details: {
-    indications: '',
+    indications: [],
     contraindications: [
       'zaburzeniami krzepliwości krwi',
       'cukrzycą',
