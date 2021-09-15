@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import cosmetologyServices from '@/assets/js/cosmetologyServices.js'
+import { cosmetologyServices } from '@/assets/js/cosmetologyServices.js'
 export default {
   name: 'PriceSection',
   data() {

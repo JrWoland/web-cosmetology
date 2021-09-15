@@ -26,7 +26,7 @@ export default {
       value: '750zł'
     },
     {
-      type: 'Dodatkowe dopigmentowanie (do 2-mcy po korekcie) ',
+      type: 'Dodatkowe dopigmentowanie (do 2-mcy po korekcie)',
       value: '150zł'
     },
     {
@@ -35,11 +35,11 @@ export default {
     },
     {
       type: 'odświeżenie do 1.5 roku',
-      value: '50% obowiązującej ceny'
+      value: '50% ceny'
     },
     {
       type: 'odświeżenie do 2 lat',
-      value: '70% obowiązującej ceny'
+      value: '70% ceny'
     }
   ],
   details: {

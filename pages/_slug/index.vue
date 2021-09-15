@@ -78,7 +78,7 @@
 </template>
 
 <script>
-import services from '~/assets/js/cosmetologyServices'
+import { cosmetologyServices as services } from '~/assets/js/cosmetologyServices'
 export default {
   computed: {
     restOfServices() {

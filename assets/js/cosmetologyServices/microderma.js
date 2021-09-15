@@ -22,13 +22,13 @@ export default {
   time: '15min-30min',
   prices: [
     {
-      type: 'Mikrodermabrazja diamentowa + maska algowa',
+      type: 'Mikrodermabrazja diamentowa',
       value: '100zł',
       time: '60min'
     },
     {
-      type: 'Mikrodermabrazja diamentowa + kwas migdałowy + maska algowa',
-      value: '150zł',
+      type: 'Mikrodermabrazja diamentowa + maska algowa',
+      value: '130zł',
       time: '90min'
     }
   ],
