@@ -24,6 +24,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://unpkg.com/aos@next/dist/aos.css' },
       {
         rel: 'stylesheet',
         href:
@@ -35,6 +36,12 @@ export default {
         integrity:
           'sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr',
         crossorigin: 'anonymous'
+      }
+    ],
+    script: [
+      {
+        src: 'https://unpkg.com/aos@next/dist/aos.js',
+        defer: true
       }
     ]
   },

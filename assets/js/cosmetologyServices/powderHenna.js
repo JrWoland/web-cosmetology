@@ -1,6 +1,6 @@
 import BeautyService from '../BeautyService.js'
 
-const service = new BeautyService('Henna pudrowa')
+const service = new BeautyService('Henna pudrowa i regulacja')
 
 service.path = 'henna-pudrowa'
 service.head = {

@@ -23,14 +23,13 @@ export default {
 <style lang="scss" scoped>
 .main-button {
   font-family: $second-font, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
-  padding: 0.4em 1.3em;
-  border-radius: 10em;
-  border: none;
+  padding: 0.6em 1.6em;
+  border: 2px solid $attention-color;
   outline: none;
-  background-color: $attention-color;
-  color: white;
+  background-color: white;
+  color: $attention-color;
   text-transform: uppercase;
   transition: background-color 0.2s;
   @include for-desktop-up {
@@ -41,7 +40,8 @@ export default {
   }
 
   &:hover {
-    background-color: darken($attention-color, 10%);
+    background-color: $attention-color;
+    color: white;
     cursor: pointer;
   }
 }

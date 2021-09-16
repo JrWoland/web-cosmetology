@@ -1,6 +1,6 @@
 import BeautyService from '../BeautyService.js'
 
-const service = new BeautyService('Stylizacja rzęs')
+const service = new BeautyService('Stylizacja i przedłużanie rzęs')
 
 service.path = 'stylizacja-i-przedluzanie-rzes'
 service.head = {
@@ -19,7 +19,6 @@ service.heroImg = {
 }
 service.video =
   'https://v.ftcdn.net/01/16/46/46/240_F_116464602_0yalaGaN0DHPwUSKXxAMvNwW58hmBcH2_ST.mp4'
-service.name = 'Stylizacja rzęs'
 service.shortDescription =
   'Stylizacja rzęs to zabieg dla każdej kobiety, która marzy o pięknych, długich i gęstych rzęsach. Zabiegi zagęszczania rzęs różnią się między sobą. W zależności od wybranej metody efekt będzie delikatny i naturalny, lub spektakularny i teatralny.'
 service.time = '1h-2h'

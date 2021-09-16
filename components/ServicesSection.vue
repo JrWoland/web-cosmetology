@@ -2,15 +2,8 @@
   <section class="services-section">
     <h2 class="services-section__title">Zabiegi</h2>
     <div class="services-section__content">
-      <!-- <ServiceCard
-        v-for="group in groupedServices"
-        :key="group.name"
-        :video="group.video"
-        :title="group.name"
-        class="services-section__item"
-      /> -->
       <div
-        v-for="group in groupedServices"
+        v-for="(group, i, k) in groupedServices"
         :key="group.name"
         class="services-section__item"
       >
@@ -22,22 +15,28 @@
             loop
             playsinline
             muted
+            data-aos="fade-in"
           ></video>
           <div class="services-section__group-title">
             <h3 class="services-section__title">{{ group.name }}</h3>
           </div>
         </div>
-        <div
-          v-for="service in group.services"
-          :key="service.name"
-          class="services-section__details"
-        >
-          <p class="services-section__type">
-            {{ service.name }}
-          </p>
-          <NuxtLink :to="{ path: `/${service.path}` }">
-            <MainButton button-content="więcej" size="small" />
-          </NuxtLink>
+        <div class="services-section__details">
+          <div
+            v-for="service in group.services"
+            :key="service.name"
+            :data-aos="k % 2 === 0 ? 'fade-left' : 'fade-right'"
+            data-aos-duration="1000"
+            class="services-section__type"
+          >
+            <p class="services-section__type-name">{{ service.name }}</p>
+            <NuxtLink
+              :to="{ path: `/${service.path}` }"
+              class="services-section__read-more-btn"
+            >
+              <MainButton button-content="sprawdź" size="small" />
+            </NuxtLink>
+          </div>
         </div>
       </div>
     </div>
@@ -51,12 +50,10 @@ import {
 } from '@/assets/js/cosmetologyServices.js'
 import MainButton from '@/components/MainButton.vue'
 
-// import ServiceCard from './ServiceCard.vue'
 export default {
   name: 'ServicesSection',
   components: {
     MainButton
-    // ServiceCard
   },
   data() {
     return {
@@ -69,25 +66,36 @@ export default {
 
 <style lang="scss" scoped>
 .services-section {
-  margin-top: 150px;
+  margin-top: 50px;
   padding: 0 $mobile-gap 0;
   color: $font-color;
   text-align: center;
-  min-height: 80vh;
+  min-height: 75vh;
 
-  @include for-tablet-landscape {
+  @include for-tablet-landscape-up {
     padding: 0 $desktop-gap 0;
   }
 
   &__item {
-    @include box-shadow;
     margin: 150px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // &:nth-child(even) {
-    //   flex-direction: row-reverse;
-    // }
+
+    @include for-tablet-landscape-up {
+      flex-direction: row;
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+      &:nth-child(odd) {
+        .services-section__details {
+          text-align: left;
+        }
+        .services-section__type {
+          flex-direction: row-reverse;
+        }
+      }
+    }
   }
 
   &__title {
@@ -95,6 +103,7 @@ export default {
     font-family: $main-font;
     font-size: $large-font;
     font-weight: 700;
+
     @include for-desktop-up {
       font-size: $big-font;
       margin: 15px 0;
@@ -103,7 +112,12 @@ export default {
 
   &__video-container {
     position: relative;
-    height: 40vh;
+    height: 30vh;
+
+    @include for-tablet-landscape-up {
+      width: 55%;
+      height: 40vh;
+    }
   }
 
   &__video {
@@ -118,7 +132,7 @@ export default {
   &__group-title {
     position: absolute;
     width: 100%;
-    background: rgba(255, 255, 255, 0.808);
+    background: rgba(255, 255, 255, 0.741);
     top: 50%;
     left: 0;
     transform: translateY(-50%);
@@ -126,15 +140,46 @@ export default {
 
   &__details {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 1em;
+
+    @include for-tablet-landscape-up {
+      flex-direction: column;
+      justify-content: center;
+      width: 45%;
+      text-align: right;
+    }
   }
 
   &__type {
-    font-family: $second-font;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1em 0em;
+    font-family: $second-font;
+
+    @include for-tablet-landscape-up {
+      width: 100%;
+      font-size: $small-font;
+      padding: 1em 0.5em;
+      justify-content: space-evenly;
+    }
+
+    @include for-desktop-up {
+      font-size: $medium-font;
+    }
+  }
+
+  &__read-more-btn {
+    margin: 5px 15px 5px 15px;
+  }
+  &__type-name {
+    word-wrap: break-word;
+    @include for-tablet-landscape-up {
+      flex-grow: 1;
+    }
   }
 }
 </style>

@@ -1,6 +1,10 @@
 <template>
   <section class="hero-section">
-    <div class="hero-section__titles">
+    <div
+      class="hero-section__titles"
+      data-aos="fade-in"
+      data-aos-duration="1000"
+    >
       <header>
         <h1 class="hero-section__title">Profesjonalne zabiegi</h1>
         <h1 class="hero-section__subtitle">
@@ -25,6 +29,8 @@
       class="hero-section__img"
       src="../assets/png/avatar-angela-mid.png"
       alt="Women avatar"
+      data-aos="fade-in"
+      data-aos-delay="500"
     />
   </section>
 </template>
