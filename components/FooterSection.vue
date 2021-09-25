@@ -7,7 +7,7 @@
         alt="logo image"
       />
       <h3>Kontakt</h3>
-      <ul>
+      <ul class="footer-section__list">
         <li class="footer-section__adress-item">+48 516 355 412</li>
         <li class="footer-section__adress-item">
           gabinet.apanowiczkozicka@gmail.com
@@ -67,6 +67,11 @@ export default {
 
   &__logo-img {
     width: 200px;
+  }
+
+  &__list {
+    padding: 0;
+    word-wrap: break-word;
   }
 
   &__adress-item {

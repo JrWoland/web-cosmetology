@@ -23,5 +23,6 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 </style>

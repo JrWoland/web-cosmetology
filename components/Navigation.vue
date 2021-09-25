@@ -52,6 +52,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.fas {
+  color: $font-color;
+}
 .main-header {
   position: fixed;
   top: 0;

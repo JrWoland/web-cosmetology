@@ -12,7 +12,7 @@ export default {
   },
   heroImg: {
     src: '/service-img/micro.jpg',
-    alt: 'zdjecie brwi'
+    alt: 'mikrodermabrazja'
   },
   video:
     'https://v.ftcdn.net/01/32/11/98/240_F_132119893_fS9zzOB017rgKKXtEMYN8HD2GGlAvqxQ_ST.mp4',
@@ -22,18 +22,18 @@ export default {
   time: '15min-30min',
   prices: [
     {
-      type: 'Mikrodermabrazja diamentowa + maska algowa',
+      type: 'Mikrodermabrazja diamentowa',
       value: '100zł',
       time: '60min'
     },
     {
-      type: 'Mikrodermabrazja diamentowa + kwas migdałowy + maska algowa',
-      value: '150zł',
+      type: 'Mikrodermabrazja diamentowa + maska algowa',
+      value: '130zł',
       time: '90min'
     }
   ],
   details: {
-    indications: '',
+    indications: [],
     contraindications: [
       'zaburzeniami krzepliwości krwi',
       'cukrzycą',

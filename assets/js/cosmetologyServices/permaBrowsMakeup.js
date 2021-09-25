@@ -12,7 +12,7 @@ export default {
   },
   heroImg: {
     src: '/service-img/browns.jpg',
-    alt: 'zdjecie brwi'
+    alt: 'brwi'
   },
   video:
     'https://v.ftcdn.net/02/89/24/92/240_F_289249204_J7urXUARQbAypo96CatMONYpeUdSdzBn_ST.mp4',
@@ -23,7 +23,11 @@ export default {
   prices: [
     {
       type: 'Powder&Ombre Brows ',
-      value: '600zł'
+      value: '750zł'
+    },
+    {
+      type: 'Dodatkowe dopigmentowanie (do 2-mcy po korekcie)',
+      value: '150zł'
     },
     {
       type: 'korekta do 3 mscy bezpłatna',
@@ -31,15 +35,15 @@ export default {
     },
     {
       type: 'odświeżenie do 1.5 roku',
-      value: '50% obowiązującej ceny'
+      value: '50% ceny'
     },
     {
       type: 'odświeżenie do 2 lat',
-      value: '70% obowiązującej ceny'
+      value: '70% ceny'
     }
   ],
   details: {
-    indications: '',
+    indications: [],
     contraindications: [
       'zaburzenia krzepliwości krwi',
       'cukrzyca',
