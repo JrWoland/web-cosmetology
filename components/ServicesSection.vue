@@ -83,6 +83,10 @@ export default {
     justify-content: space-between;
 
     @include for-tablet-landscape-up {
+      align-items: center;
+    }
+
+    @include for-tablet-landscape-up {
       flex-direction: row;
       &:nth-child(even) {
         flex-direction: row-reverse;
@@ -163,7 +167,7 @@ export default {
     @include for-tablet-landscape-up {
       width: 100%;
       font-size: $small-font;
-      padding: 1em 0.5em;
+      padding: 0.5em 0.5em;
       justify-content: space-evenly;
     }
 

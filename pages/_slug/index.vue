@@ -1,7 +1,7 @@
 <template>
   <main class="wrapper">
     <div class="hero-img">
-      <img :src="service.heroImg.src" :alt="service.heroImg.src" />
+      <img :src="service.heroImg.src" :alt="service.heroImg.alt" />
     </div>
     <article class="service-article">
       <header class="service-article__header">
@@ -54,7 +54,7 @@
 
       <section v-if="service.details.aboutService">
         <h2>Przebieg zabiegu</h2>
-        <p>{{ service.details.aboutService }}</p>
+        <p v-html="service.details.aboutService">{{}}</p>
       </section>
 
       <section v-if="service.details.afterServiceEffects">
@@ -105,7 +105,12 @@ export default {
 }
 .hero-img {
   overflow: hidden;
-  max-height: 400px;
+  max-height: 200px;
+
+  @include for-tablet-landscape {
+    max-height: 400px;
+  }
+
   img {
     width: 100%;
     transform: translateY(-40%);
@@ -148,7 +153,7 @@ export default {
   }
 
   h2 {
-    margin: 10px 0 10px;
+    margin: 25px 0 10px;
     font-family: $main-font;
     font-weight: 700;
     @include for-tablet-landscape {

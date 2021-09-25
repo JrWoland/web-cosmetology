@@ -1,8 +1,8 @@
-import BeautyService from '../BeautyService.js'
+import BeautyService from '../BeautyServiceModel.js'
 
 const service = new BeautyService('Stylizacja i przedłużanie rzęs')
 
-service.path = 'stylizacja-i-przedluzanie-rzes'
+service.path = 'rzesy'
 service.head = {
   title: 'Stylizacja i przedłużanie rzęs Białystok',
   meta: [
@@ -15,7 +15,7 @@ service.head = {
 }
 service.heroImg = {
   src: '/service-img/lashes.jpg',
-  alt: 'zdjecie brwi'
+  alt: 'rzęsy'
 }
 service.video =
   'https://v.ftcdn.net/01/16/46/46/240_F_116464602_0yalaGaN0DHPwUSKXxAMvNwW58hmBcH2_ST.mp4'

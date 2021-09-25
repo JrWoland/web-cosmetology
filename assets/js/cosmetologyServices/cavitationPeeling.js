@@ -1,4 +1,4 @@
-import BeautyService from '../BeautyService.js'
+import BeautyService from '../BeautyServiceModel.js'
 
 const service = new BeautyService('Peeling kawitacyjny i sonofereza')
 
@@ -15,7 +15,7 @@ service.head = {
 }
 service.heroImg = {
   src: '/service-img/peeling.jpg',
-  alt: 'zdjecie brwi'
+  alt: 'peeling kawitacyjny'
 }
 service.video =
   'https://v.ftcdn.net/01/82/12/02/700_F_182120202_3Fs2IC9MawxzRcCX4enz50QPXYke0jmu_ST.mp4'

@@ -23,7 +23,7 @@ export const groupedServices = {
   },
   face: {
     name: 'Zabiegi na twarz',
-    services: [microderma, chemicalPeeling, mezoteraphy],
+    services: [microderma, chemicalPeeling, mezoteraphy, cavitationPeeling],
     video:
       'https://v.ftcdn.net/01/82/12/02/700_F_182120202_3Fs2IC9MawxzRcCX4enz50QPXYke0jmu_ST.mp4'
   },

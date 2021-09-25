@@ -1,4 +1,4 @@
-import BeautyService from '../BeautyService.js'
+import BeautyService from '../BeautyServiceModel.js'
 
 const service = new BeautyService('Henna pudrowa i regulacja')
 
@@ -14,17 +14,18 @@ service.head = {
   ]
 }
 service.heroImg = {
-  src: '/service-img/peeling.jpg',
+  src: '/service-img/henna.jpg',
   alt: 'henna pudrowa'
 }
 service.video = ''
-service.shortDescription = ''
-service.time = '30-45min'
+service.shortDescription =
+  'Pudrowa stylizacja brwi polega na podkreśleniu włosów, wzmocnieniu ich koloru, ujarzmieniu tych niesfornych oraz na odżywieniu, co warto szczególnie podkreślić'
+service.time = '45min'
 service.prices = [
   {
     type: 'Henna pudrowa',
     value: '70zł',
-    time: '30-45min'
+    time: '45min'
   },
   {
     type: 'Henna + regulacja',
@@ -38,9 +39,20 @@ service.prices = [
   }
 ]
 service.details = {
-  indications: [],
-  contraindications: [],
-  aboutService: '',
+  indications: [
+    'krótkie i jasne włoski brwi',
+    'osobom, które nie chcą tracić czasu na codzienną stylizację brwi'
+  ],
+  contraindications: [
+    'stany zapalne w skóry w okolicach brwi',
+    'stany zapalne powiek'
+  ],
+  aboutService: `
+    Zabieg rozpoczyna się rozmową z klientką i ustaleniem ewentualnego kształtu brwi. Następnie po wykonaniu rysunku, nakładany jest preparat.
+    Henna pudrowa jest w formie sproszkowanej, w zupełności naturalnym produktem. 
+    Dzięki temu, zabieg henny pudrowej nie tylko wypełnia i wzmacnia kolor brwi, ale także je pielęgnuje i regeneruje (jeśli są uszkodzone). 
+    Musisz również pamiętać, że henna pudrowa barwi zarówno skórę jak i włosy.
+    Efekt barwienia Henną Pudrową utrzymuje się na skórze około 14 dni, a na włoskach nawet do 5-6 tygodni.`,
   afterServiceEffects: '',
   imgs: [
     {

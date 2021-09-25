@@ -12,7 +12,7 @@ export default {
   },
   heroImg: {
     src: '/service-img/browns.jpg',
-    alt: 'zdjecie brwi'
+    alt: 'brwi'
   },
   video:
     'https://v.ftcdn.net/02/89/24/92/240_F_289249204_J7urXUARQbAypo96CatMONYpeUdSdzBn_ST.mp4',
