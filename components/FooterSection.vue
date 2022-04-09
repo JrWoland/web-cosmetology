@@ -13,7 +13,7 @@
           gabinet.apanowiczkozicka@gmail.com
         </li>
         <li class="footer-section__adress-item">
-          Białystok, Komisji Edukacji Narodowej 50/lok.9
+          Białystok TBS, Komisji Edukacji Narodowej 50/lok.9
         </li>
       </ul>
       <SocialMedia class="footer-section__media" />

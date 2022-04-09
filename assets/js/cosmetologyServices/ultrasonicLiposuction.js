@@ -27,44 +27,24 @@ service.prices = [
     time: '30-45min'
   },
   {
-    type: 'Pośladki',
-    value: '80zł',
+    type: 'Uda',
+    value: '90zł',
     time: '30-45min'
   },
   {
-    type: 'Brzuch',
-    value: '90zł',
+    type: 'Uda + pośladki',
+    value: '110zł',
+    time: '30-45min'
+  },
+  {
+    type: 'Uda +  łydki + pośladki',
+    value: '130zł',
     time: '30-45min'
   },
   {
     type: 'Brzuch + boki',
     value: '110zł',
     time: '30-45min'
-  },
-  {
-    type: 'Uda',
-    value: '120zł',
-    time: '30-45min'
-  },
-  {
-    type: 'Uda + łydki',
-    value: '140zł',
-    time: '30-45min'
-  },
-  {
-    type: 'Uda + pośladki',
-    value: '150zł',
-    time: '30-45min'
-  },
-  {
-    type: 'Uda +  łydki + pośladki',
-    value: '160zł',
-    time: '30-45min'
-  },
-  {
-    type: 'Ramiona + Brzuch + Boki + Pośladki + Uda + Łydki',
-    value: '340zł',
-    time: '1h'
   }
 ]
 service.details = {

@@ -25,15 +25,15 @@ service.time = '1h-2h'
 service.prices = [
   {
     type: 'Light Volume 2D',
-    value: '120zł (90zł)'
+    value: '130zł (100zł)'
   },
   {
     type: 'Medium Volume 3D',
-    value: '140zł (110zł)'
+    value: '150zł (120zł)'
   },
   {
     type: 'Mega Volume 4/6d',
-    value: '160zł (130zł)'
+    value: '170zł (140zł)'
   },
   {
     type: 'Russian Effect',

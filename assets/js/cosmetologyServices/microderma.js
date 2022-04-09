@@ -28,7 +28,7 @@ export default {
     },
     {
       type: 'Mikrodermabrazja diamentowa + maska algowa',
-      value: '130zł',
+      value: '100zł + 30zł',
       time: '90min'
     }
   ],
