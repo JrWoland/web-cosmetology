@@ -24,7 +24,7 @@ service.time = '45min - 1h'
 service.prices = [
   {
     type: 'Peeling chemiczny',
-    value: '150-200zł',
+    value: '150zł-220zł',
     time: '45-60min'
   },
   {

@@ -1,9 +1,15 @@
 <template>
-  <section class="hero-section">
+  <section
+    class="hero-section"
+    data-aos="fade-in"
+    data-aos-duration="1000"
+    data-aos-delay="100"
+  >
     <div
       class="hero-section__titles"
       data-aos="fade-in"
       data-aos-duration="1000"
+      data-aos-delay="700"
     >
       <header>
         <h1 class="hero-section__title">Profesjonalne zabiegi</h1>
@@ -21,32 +27,32 @@
         src="~/assets/png/logo.png"
         alt="logo gabinetu"
       />
-      <div class="hero-section__button">
-        <MainButton button-content="więcej" />
-      </div>
     </div>
     <img
       class="hero-section__img"
       src="../assets/png/avatar-angela-mid.png"
       alt="Women avatar"
       data-aos="fade-in"
-      data-aos-delay="500"
+      data-aos-duration="1000"
+      data-aos-delay="1000"
     />
   </section>
 </template>
 
 <script>
-import MainButton from './MainButton'
 export default {
-  name: 'HeroSection',
-  components: {
-    MainButton
-  }
+  name: 'HeroSection'
 }
 </script>
 
 <style lang="scss" scoped>
+.hero-wrapper {
+  @include for-tablet-landscape {
+    // margin: 15px 100px 0;
+  }
+}
 .hero-section {
+  @include glassmorph;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -81,6 +87,7 @@ export default {
     margin-top: 1vh;
   }
   &__titles {
+    // @include glassmorph;
     @include for-tablet-landscape {
       text-align: center;
       max-width: 50vw;
@@ -112,9 +119,7 @@ export default {
       line-height: 50px;
     }
   }
-  &__button {
-    margin-top: 20px;
-  }
+
   &__img {
     transform: translate(0px, 30px);
     width: 85vw;

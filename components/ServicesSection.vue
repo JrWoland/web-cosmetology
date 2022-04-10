@@ -77,16 +77,19 @@ export default {
   }
 
   &__item {
+    @include glassmorph;
     margin: 150px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    @include for-tablet-landscape-up {
-      align-items: center;
+    &:first-child {
+      margin-top: 15px;
     }
 
     @include for-tablet-landscape-up {
+      margin: 100px 0;
+      align-items: center;
       flex-direction: row;
       &:nth-child(even) {
         flex-direction: row-reverse;
@@ -106,7 +109,7 @@ export default {
     margin: 1.2em 0;
     font-family: $main-font;
     font-size: $large-font;
-    font-weight: 700;
+    font-weight: $bold;
 
     @include for-desktop-up {
       font-size: $big-font;

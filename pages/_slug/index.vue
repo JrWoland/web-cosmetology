@@ -52,12 +52,18 @@
         </section>
       </div>
 
-      <section v-if="service.details.aboutService">
+      <section
+        v-if="service.details.aboutService"
+        class="service-article__about"
+      >
         <h2>Przebieg zabiegu</h2>
-        <p v-html="service.details.aboutService">{{}}</p>
+        <p v-html="service.details.aboutService"></p>
       </section>
 
-      <section v-if="service.details.afterServiceEffects">
+      <section
+        v-if="service.details.afterServiceEffects"
+        class="service-article__about"
+      >
         <h2>Efekty po zabiegu</h2>
         <p>{{ service.details.afterServiceEffects }}</p>
       </section>
@@ -65,20 +71,23 @@
 
     <aside id="services" class="service-aside">
       <h2 class="service-aside__title">Zobacz inne zabiegi</h2>
-      <NuxtLink
-        v-for="(service, index) in restOfServices"
-        :key="index"
-        :to="{ path: `/${service.path}` }"
-        class="service-aside__content"
-      >
-        <span>{{ service.name }}</span>
-      </NuxtLink>
+      <div class="service-aside__content">
+        <NuxtLink
+          v-for="(service, index) in restOfServices"
+          :key="index"
+          :to="{ path: `/${service.path}` }"
+          class="service-aside__content-item"
+        >
+          <span>{{ service.name }}</span>
+        </NuxtLink>
+      </div>
     </aside>
   </main>
 </template>
 
 <script>
 import { cosmetologyServices as services } from '~/assets/js/cosmetologyServices'
+
 export default {
   computed: {
     restOfServices() {
@@ -90,7 +99,6 @@ export default {
     const service = services.find((service) => service.path === slug)
     return { service }
   },
-
   head() {
     return this.service.head
   }
@@ -133,12 +141,17 @@ export default {
   }
 
   &__section {
-    @include box-shadow;
+    @include glassmorph;
     margin: 30px 0px;
     padding: 30px;
     @include for-tablet-landscape {
       width: 48%;
     }
+  }
+
+  &__about {
+    @include glassmorph;
+    padding: 30px;
   }
 
   h1 {
@@ -153,7 +166,7 @@ export default {
   }
 
   h2 {
-    margin: 25px 0 10px;
+    margin: 10px 0 10px;
     font-family: $main-font;
     font-weight: 700;
     @include for-tablet-landscape {
@@ -199,13 +212,25 @@ export default {
   }
 
   &__content {
-    @include box-shadow;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     padding: 10px;
     margin: 20px 0;
+  }
+
+  &__content-item {
+    @include glassmorph;
+    width: 100%;
+    min-height: 50px;
+    margin: 15px;
+    padding: 15px;
+
+    @include for-tablet-landscape {
+      width: 45%;
+    }
   }
 }
 </style>

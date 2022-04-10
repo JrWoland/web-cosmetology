@@ -24,5 +24,9 @@ export default {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('~@/static/mesh.png');
 }
 </style>

@@ -12,7 +12,7 @@
         />
       </figure>
       <p class="promo-section__subtitle promo-section--item-gap">
-        Cześć! Mam na imię Angelika i chciałabym zostać Twoim Kosmetologiem
+        Cześć! Mam na imię Angelika i z chęcią zostanę Twoim Kosmetologiem!
         <br />
         Jestem absolwentką Uniwersytetu Medycznego w Białymstoku, ukończyłam
         wyższe studia magisterskie na kierunku Kosmetologia. Poza główną wiedzą
@@ -43,6 +43,7 @@ export default {
 
 <style lang="scss" scoped>
 .promo-section {
+  @include glassmorph;
   text-align: center;
   color: $font-color;
   padding: 0 $mobile-gap 0;

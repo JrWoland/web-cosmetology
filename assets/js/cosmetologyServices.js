@@ -1,4 +1,3 @@
-import cavitationPeeling from './cosmetologyServices/cavitationPeeling'
 import lashes from './cosmetologyServices/lashes'
 import microderma from './cosmetologyServices/microderma'
 import permaBrowsMakeup from './cosmetologyServices/permaBrowsMakeup'
@@ -23,7 +22,7 @@ export const groupedServices = {
   },
   face: {
     name: 'Zabiegi na twarz',
-    services: [microderma, chemicalPeeling, mezoteraphy, cavitationPeeling],
+    services: [microderma, chemicalPeeling, mezoteraphy],
     video:
       'https://v.ftcdn.net/01/82/12/02/700_F_182120202_3Fs2IC9MawxzRcCX4enz50QPXYke0jmu_ST.mp4'
   },
@@ -39,10 +38,9 @@ export const cosmetologyServices = [
   lashes,
   permaBrowsMakeup,
   microderma,
-  cavitationPeeling,
+  dermomasage,
   chemicalPeeling,
   mezoteraphy,
-  ultrasonicLiposuction,
-  dermomasage,
-  powderHenna
+  powderHenna,
+  ultrasonicLiposuction
 ]

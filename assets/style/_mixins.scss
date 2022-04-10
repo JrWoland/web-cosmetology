@@ -5,3 +5,12 @@
     box-shadow: 0px 1px 10px 0px #e6e6e6;
   }
 }
+
+@mixin glassmorph($color: rgba( 255, 255, 255, 0.4 )) {
+  background: $color;
+  box-shadow: 0 8px 32px 0 rgba(196, 199, 235, 0.37);
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.578);  
+}

@@ -23,7 +23,15 @@ export default {
   prices: [
     {
       type: 'Powder&Ombre Brows ',
-      value: '750zł'
+      value: '800zł'
+    },
+    {
+      type: 'odświeżenie do 1.5 roku',
+      value: '50% ceny'
+    },
+    {
+      type: 'odświeżenie do 2 lat',
+      value: '80% ceny'
     },
     {
       type: 'Dodatkowe dopigmentowanie (do 2-mcy po korekcie)',
@@ -32,14 +40,6 @@ export default {
     {
       type: 'korekta do 3 mscy bezpłatna',
       value: '0zł'
-    },
-    {
-      type: 'odświeżenie do 1.5 roku',
-      value: '50% ceny'
-    },
-    {
-      type: 'odświeżenie do 2 lat',
-      value: '70% ceny'
     }
   ],
   details: {

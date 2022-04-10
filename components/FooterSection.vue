@@ -13,7 +13,7 @@
           gabinet.apanowiczkozicka@gmail.com
         </li>
         <li class="footer-section__adress-item">
-          Białystok, Komisji Edukacji Narodowej 50/lok.9
+          Białystok TBS, Komisji Edukacji Narodowej 50/lok.9
         </li>
       </ul>
       <SocialMedia class="footer-section__media" />
@@ -42,10 +42,10 @@ export default {
 
 <style lang="scss" scoped>
 .footer-section {
+  @include glassmorph(rgba(253, 230, 255, 0.289));
   font-family: $second-font;
-  color: $main-color;
+  color: $font-color;
   padding: 0 $mobile-gap 0;
-  background-color: rgb(53, 37, 64);
   @include for-tablet-landscape {
     padding: 30px $desktop-gap;
     display: flex;

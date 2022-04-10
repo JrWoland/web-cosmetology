@@ -29,7 +29,7 @@ service.prices = [
   },
   {
     type: 'Henna + regulacja',
-    value: '35zł',
+    value: '40zł',
     time: '20-30min'
   },
   {
