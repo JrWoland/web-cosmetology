@@ -43,6 +43,7 @@ export default {
 
 <style lang="scss" scoped>
 .promo-section {
+  @include glassmorph;
   text-align: center;
   color: $font-color;
   padding: 0 $mobile-gap 0;
