@@ -3,6 +3,12 @@
     <Navigation />
     <nuxt />
     <FooterSection id="footer" />
+    <div id="fb-root" ref="fb-root"></div>
+    <div
+      id="fb-customer-chat"
+      ref="fb-customer-chat"
+      class="fb-customerchat"
+    ></div>
   </div>
 </template>
 
