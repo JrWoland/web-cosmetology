@@ -11,10 +11,14 @@ export default {
     htmlAttrs: {
       lang: 'pl'
     },
-    title: 'Gabinet kosmetologiczny Białystok. Angelika Apanowicz-Kozicka',
+    title: 'Gabinet kosmetologiczny Białystok TBS. Angelika Apanowicz-Kozicka',
     meta: [
       { charset: 'UTF-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        name: 'keywords',
+        content: 'salon kosmetyczny, kosmetolog, kosmetolog białystok, TBS'
+      },
       {
         name: 'description',
         hid: 'description',
@@ -42,8 +46,35 @@ export default {
       {
         src: 'https://unpkg.com/aos@next/dist/aos.js',
         defer: true
+      },
+      {
+        type: 'text/javascript',
+        hid: 'fb-customer-chat',
+        body: true,
+        innerHTML: `
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "121109382622565");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v13.0'
+          });
+        };
+
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        `
       }
-    ]
+    ],
+    __dangerouslyDisableSanitizersByTagID: { 'fb-customer-chat': ['innerHTML'] }
   },
   /*
    ** Customize the progress-bar color
