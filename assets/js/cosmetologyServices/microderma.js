@@ -41,7 +41,7 @@ export default {
       'zmagające się z infekcją i będące w kuracji lekami sterydowymi.'
     ],
     aboutService:
-      'Urządzenie, którym jest wykonywany, zabieg, jest wyposażone w głowice ścierne pokryte diamentem oraz kompresor wytwarzający podciśnienie. Złuszczone warstwy skóry, są automatycznie zasysane i osadzają się w wymiennych filtrach urządzenia. Częstotliwość wykonywania mikrodermabrazji jest uzależniona od potrzeb indywidualnych, ale najczęściej powinno to być nie mniej niż co 14 dni i nie rzadziej niż 21 dni, gdyż tyle czasu trwa całkowita odbudowa komórek skóry.',
+      'Urządzenie, którym jest wykonywany zabieg, jest wyposażone w głowice ścierne pokryte diamentem oraz kompresor wytwarzający podciśnienie. Złuszczone warstwy skóry, są automatycznie zasysane i osadzają się w wymiennych filtrach urządzenia. Częstotliwość wykonywania mikrodermabrazji jest uzależniona od potrzeb indywidualnych, ale zaleca się by było to mnie mniej niż 14 dni i nie rzadziej niż 21 dni, gdyż tyle czasu trwa całkowita odbudowa komórek skóry.',
     afterServiceEffects: '',
     imgs: [
       {
