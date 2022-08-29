@@ -31,7 +31,7 @@
           v-if="service.details.contraindications.length"
           class="service-article__section"
         >
-          <h2>Przeciwskazania</h2>
+          <h2>Przeciwwskazania</h2>
           <ul>
             <li v-for="contraindication in service.details.contraindications">
               {{ contraindication }}

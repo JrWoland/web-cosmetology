@@ -51,7 +51,3 @@ export default class BeautyService {
     this.details = new ServiceDetails()
   }
 }
-
-const service = new BeautyService('Mikro')
-
-service.head.title = 'Title'
