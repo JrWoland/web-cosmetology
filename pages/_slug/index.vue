@@ -1,7 +1,11 @@
 <template>
   <main class="wrapper">
     <div class="hero-img">
-      <img :src="service.heroImg.src" :alt="service.heroImg.alt" />
+      <img
+        :src="service.heroImg.src"
+        :alt="service.heroImg.alt"
+        loading="eager"
+      />
     </div>
     <article class="service-article">
       <header class="service-article__header">
@@ -68,7 +72,6 @@
         <p>{{ service.details.afterServiceEffects }}</p>
       </section>
     </article>
-
     <aside id="services" class="service-aside">
       <h2 class="service-aside__title">Zobacz inne zabiegi</h2>
       <div class="service-aside__content">
@@ -76,6 +79,7 @@
           v-for="(service, index) in restOfServices"
           :key="index"
           :to="{ path: `/${service.path}` }"
+          :class="{ current: `/${service.path}` === currentPath }"
           class="service-aside__content-item"
         >
           <span>{{ service.name }}</span>
@@ -91,7 +95,10 @@ import { cosmetologyServices as services } from '~/assets/js/cosmetologyServices
 export default {
   computed: {
     restOfServices() {
-      return services.filter((item) => item.path !== this.service.path)
+      return services
+    },
+    currentPath() {
+      return this.$nuxt.$route.path
     }
   },
   async asyncData({ params }) {
@@ -113,10 +120,10 @@ export default {
 }
 .hero-img {
   overflow: hidden;
-  max-height: 200px;
+  aspect-ratio: 3;
 
   @include for-tablet-landscape {
-    max-height: 400px;
+    aspect-ratio: 20/3;
   }
 
   img {
@@ -213,7 +220,6 @@ export default {
 
   &__content {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
@@ -223,13 +229,15 @@ export default {
 
   &__content-item {
     @include glassmorph;
-    width: 100%;
-    min-height: 50px;
-    margin: 15px;
-    padding: 15px;
+    min-width: 15%;
+    margin: 5px;
+    padding: 10px;
+    &.current {
+      color: $attention-color;
+    }
 
     @include for-tablet-landscape {
-      width: 45%;
+      min-width: 10%;
     }
   }
 }

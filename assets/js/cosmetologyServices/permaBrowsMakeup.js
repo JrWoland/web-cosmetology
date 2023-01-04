@@ -22,8 +22,8 @@ export default {
   time: '2h-3h',
   prices: [
     {
-      type: 'Powder&Ombre Brows ',
-      value: '800zł'
+      type: 'Powder&Ombre Brows',
+      value: '850zł'
     },
     {
       type: 'odświeżenie do 1.5 roku',

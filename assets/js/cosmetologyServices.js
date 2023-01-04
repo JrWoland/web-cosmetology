@@ -3,7 +3,7 @@ import microderma from './cosmetologyServices/microderma'
 import permaBrowsMakeup from './cosmetologyServices/permaBrowsMakeup'
 import chemicalPeeling from './cosmetologyServices/chemicalPeeling'
 import mezoteraphy from './cosmetologyServices/mezoteraphy'
-import ultrasonicLiposuction from './cosmetologyServices/ultrasonicLiposuction'
+import oxybrasion from './cosmetologyServices/oxybrasion'
 import dermomasage from './cosmetologyServices/dermomasage'
 import powderHenna from './cosmetologyServices/powderHenna'
 
@@ -28,7 +28,7 @@ export const groupedServices = {
   },
   body: {
     name: 'Zabiegi na ciało',
-    services: [dermomasage, ultrasonicLiposuction],
+    services: [dermomasage, oxybrasion],
     video:
       'https://v.ftcdn.net/04/44/06/27/700_F_444062731_Dq9VVwaMPnoXiPrGgrdgFZ8VyN6EZYaL_ST.mp4'
   }
@@ -37,10 +37,10 @@ export const groupedServices = {
 export const cosmetologyServices = [
   lashes,
   permaBrowsMakeup,
-  microderma,
-  dermomasage,
   chemicalPeeling,
   mezoteraphy,
   powderHenna,
-  ultrasonicLiposuction
+  microderma,
+  oxybrasion,
+  dermomasage
 ]

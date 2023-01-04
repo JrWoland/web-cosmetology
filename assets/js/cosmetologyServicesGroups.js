@@ -4,7 +4,7 @@ import microderma from './cosmetologyServices/microderma'
 import permaBrowsMakeup from './cosmetologyServices/permaBrowsMakeup'
 import chemicalPeeling from './cosmetologyServices/chemicalPeeling'
 import mezoteraphy from './cosmetologyServices/mezoteraphy'
-import ultrasonicLiposuction from './cosmetologyServices/ultrasonicLiposuction'
+import oxybrasion from './cosmetologyServices/oxybrasion'
 import dermomasage from './cosmetologyServices/dermomasage'
 
 const cosmetologyServices = [
@@ -14,7 +14,7 @@ const cosmetologyServices = [
   cavitationPeeling,
   chemicalPeeling,
   mezoteraphy,
-  ultrasonicLiposuction,
+  oxybrasion,
   dermomasage
 ]
 

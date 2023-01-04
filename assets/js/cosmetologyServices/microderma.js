@@ -11,7 +11,7 @@ export default {
     ]
   },
   heroImg: {
-    src: '/service-img/micro.jpg',
+    src: '/service-img/peeling.jpg',
     alt: 'mikrodermabrazja'
   },
   video:
@@ -25,11 +25,6 @@ export default {
       type: 'Mikrodermabrazja diamentowa',
       value: '100zł',
       time: '60min'
-    },
-    {
-      type: 'Mikrodermabrazja diamentowa + maska algowa',
-      value: '100zł + 30zł',
-      time: '90min'
     }
   ],
   details: {

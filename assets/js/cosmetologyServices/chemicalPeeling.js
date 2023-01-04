@@ -23,8 +23,18 @@ service.shortDescription =
 service.time = '45min - 1h'
 service.prices = [
   {
-    type: 'Peeling chemiczny',
-    value: '150zł-220zł',
+    type: 'Ferucal Peel',
+    value: '180zł',
+    time: '45-60min'
+  },
+  {
+    type: 'Mandelac Peel',
+    value: '150zł',
+    time: '45-60min'
+  },
+  {
+    type: 'Zabieg rozświetlający Glowing C-Peel',
+    value: '150zł',
     time: '45-60min'
   },
   {
