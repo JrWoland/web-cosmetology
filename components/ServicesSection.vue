@@ -139,7 +139,7 @@ export default {
   &__group-title {
     position: absolute;
     width: 100%;
-    background: rgba(255, 255, 255, 0.741);
+    background: rgba(255, 255, 255, 0.9);
     top: 50%;
     left: 0;
     transform: translateY(-50%);
