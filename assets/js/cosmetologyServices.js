@@ -4,7 +4,6 @@ import permaBrowsMakeup from './cosmetologyServices/permaBrowsMakeup'
 import chemicalPeeling from './cosmetologyServices/chemicalPeeling'
 import mezoteraphy from './cosmetologyServices/mezoteraphy'
 import oxybrasion from './cosmetologyServices/oxybrasion'
-import dermomasage from './cosmetologyServices/dermomasage'
 import powderHenna from './cosmetologyServices/powderHenna'
 
 export const groupedServices = {
@@ -22,15 +21,9 @@ export const groupedServices = {
   },
   face: {
     name: 'Zabiegi na twarz',
-    services: [microderma, chemicalPeeling, mezoteraphy],
+    services: [microderma, chemicalPeeling, mezoteraphy, oxybrasion],
     video:
       'https://v.ftcdn.net/01/82/12/02/700_F_182120202_3Fs2IC9MawxzRcCX4enz50QPXYke0jmu_ST.mp4'
-  },
-  body: {
-    name: 'Zabiegi na ciało',
-    services: [dermomasage, oxybrasion],
-    video:
-      'https://v.ftcdn.net/04/44/06/27/700_F_444062731_Dq9VVwaMPnoXiPrGgrdgFZ8VyN6EZYaL_ST.mp4'
   }
 }
 
@@ -41,6 +34,5 @@ export const cosmetologyServices = [
   mezoteraphy,
   powderHenna,
   microderma,
-  oxybrasion,
-  dermomasage
+  oxybrasion
 ]

@@ -25,15 +25,15 @@ service.time = '1h-2h'
 service.prices = [
   {
     type: 'Light Volume',
-    value: '150zł (120zł)'
-  },
-  {
-    type: 'Medium Volume',
     value: '170zł (140zł)'
   },
   {
+    type: 'Medium Volume',
+    value: '190zł (160zł)'
+  },
+  {
     type: 'Mega Volume',
-    value: '180zł (160zł)'
+    value: '200zł (180zł)'
   }
 ]
 service.details = {
