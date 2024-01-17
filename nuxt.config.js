@@ -11,19 +11,20 @@ export default {
     htmlAttrs: {
       lang: 'pl'
     },
-    title: 'Gabinet kosmetologiczny Białystok TBS. Angelika Apanowicz-Kozicka',
+    title: 'Gabinet kosmetyczny Białystok TBS. Angelika Apanowicz-Kozicka',
     meta: [
       { charset: 'UTF-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         name: 'keywords',
-        content: 'salon kosmetyczny, kosmetolog, kosmetolog białystok, TBS'
+        content:
+          'salon kosmetyczny, kosmetolog, kosmetolog białystok, usługi kosmetyczne, TBS'
       },
       {
         name: 'description',
         hid: 'description',
         content:
-          'Gabinet kosmetologiczny Białystok. Makijaż permanentny brwi, mikrodermabrazja, peeling kawitacyjny, stylizacja i przedłużanie rzęs.'
+          'Salon kosmetyczny Białystok. Profesjonalne usługi kosmetyczne białystok. Makijaż permanentny brwi, mikrodermabrazja, peeling kawitacyjny, stylizacja i przedłużanie rzęs.'
       }
     ],
     link: [
