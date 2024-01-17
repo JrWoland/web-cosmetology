@@ -28,7 +28,7 @@ service.prices = [
     time: '45-60min'
   },
   {
-    type: 'Mandelac Peel',
+    type: 'Mandelac Peel / DNA Recovery Peel',
     value: '150zł',
     time: '45-60min'
   },

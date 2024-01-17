@@ -36,6 +36,16 @@ service.prices = [
     type: 'Henna / regulacja',
     value: '25zł',
     time: '15-20min'
+  },
+  {
+    type: 'Wąsik',
+    value: '10zł',
+    time: '10min'
+  },
+  {
+    type: 'Broda',
+    value: '20zł',
+    time: '10min'
   }
 ]
 service.details = {
