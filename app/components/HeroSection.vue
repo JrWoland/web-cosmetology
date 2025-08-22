@@ -24,16 +24,16 @@
           </ul>
         </h1>
       </header>
-      <img
+      <NuxtImg
         @click="isActive = false"
         class="hero-section__logo-img"
-        src="~/assets/png/logo.png"
+        src="/png/logo.png"
         alt="logo gabinetu"
       />
     </div>
-    <img
+    <NuxtImg
       class="hero-section__img"
-      src="../assets/png/avatar-angela-mid.png"
+      src="/png/avatar-angela-mid.png"
       alt="Women avatar"
       data-aos="fade-in"
       data-aos-duration="1000"

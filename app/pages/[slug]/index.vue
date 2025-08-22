@@ -1,7 +1,7 @@
 <template>
   <main class="wrapper">
     <div class="hero-img">
-      <img
+      <NuxtImg
         :src="service?.heroImg.src"
         :alt="service?.heroImg.alt"
         loading="eager"

@@ -33,6 +33,6 @@ export default {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  // background-image: url("/public/mesh.png");
+  background-image: url("/mesh.png");
 }
 </style>

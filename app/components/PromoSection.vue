@@ -1,13 +1,11 @@
 <template>
   <section id="promo-section" class="promo-section">
     <div class="promo-section__titles">
-      <h2 class="promo-section__head promo-section--item-gap">
-        O MNIE
-      </h2>
+      <h2 class="promo-section__head promo-section--item-gap">O MNIE</h2>
       <figure class="promo-section--item-gap">
-        <img
+        <NuxtImg
           class="promo-section__about-me-img"
-          src="~/assets/jpg/about-me-img.jpg"
+          src="/jpg/about-me-img.jpg"
           alt="Trulli"
         />
       </figure>
@@ -34,11 +32,11 @@
 </template>
 
 <script>
-import SocialMedia from '~/components/SocialMedia.vue'
+import SocialMedia from "~/components/SocialMedia.vue";
 export default {
-  name: 'PromoSection',
-  components: { SocialMedia }
-}
+  name: "PromoSection",
+  components: { SocialMedia },
+};
 </script>
 
 <style lang="scss" scoped>
