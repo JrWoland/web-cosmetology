@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   pages: true,
+  image: {
+    provider: 'netlify'
+  },
   modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/image', 'nuxt-aos'],
   vite: {
     css: {
