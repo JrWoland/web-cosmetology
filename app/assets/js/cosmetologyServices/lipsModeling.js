@@ -24,12 +24,12 @@ service.time = "45min";
 service.prices = [
   {
     type: "Modelowanie ust - 1ml",
-    value: "800zł",
+    value: "750zł",
     time: "45min",
   },
   {
     type: "Modelowanie ust - 0,5ml",
-    value: "650zł",
+    value: "550zł",
     time: "45min",
   },
 ];
